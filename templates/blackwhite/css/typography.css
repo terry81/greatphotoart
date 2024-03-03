@@ -1,0 +1,251 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2011 IceTheme. All Rights Reserved
+  
+  License:
+  GNU General Public License version 2
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+html { font-size:100.01%; width:100%; margin:0 auto; }
+
+body {
+  color: #555;
+  background: #dde3e3;
+  font-family:"Hermes BG", Arial, Helvetica, sans-serif;
+  font-size:80%;
+  line-height:1.8em;}
+  
+
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+  font-family:"Hermes BG",'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;  
+  line-height: 1.4em;
+  margin-bottom:0;
+  color: #4C4C4C; }
+
+h1 { font-size: 2.75em;  }
+h2 { font-size: 2.25em;}
+h3 { font-size: 1.75em;   }
+h4 { font-size: 1.5em;  }
+h5 { font-size: 1.25em; font-weight: bold; }
+h6 { font-size: 1.25em;}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+p           { margin: 0 0 1.25em; }
+p.last     { margin-bottom:0}
+img     { }
+
+  .blog-featured img, 
+  .blog img,
+  #promo img {
+    margin:0 10px 10px 0;
+    padding:5px;
+    float:left;}
+
+
+
+a:link { text-decoration: none; outline:none; color:#005689}
+a:visited { text-decoration:none;color:#571586}
+a:hover { text-decoration:underline;}
+
+
+
+blockquote  {
+  position:relative;
+   margin:0 0 1.5em 1em;
+   quotes: "\201C" "\201D";}
+  
+   blockquote:before,
+   blockquote:after {
+      position:absolute; 
+      font-weight: bold;
+      font-size:80px;
+      color:#e3e3e3;
+      font-family:"Hermes BG", Georgia, "Times New Roman", Times, serif; }
+   
+   blockquote:before {
+     content: open-quote;
+     top:25px;
+     left:0; }
+   
+   blockquote:after { 
+     content: close-quote;
+     right:0;
+     bottom:-5px}
+   
+   blockquote p {
+     font-family:"Hermes BG", Georgia, "Times New Roman", Times, serif;
+     font-size:1em;
+     font-style:italic;
+     margin-bottom:0;
+     line-height:2em;
+     padding:0 4em}
+     
+ 
+strong      { font-weight: bold;  }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+hr       { 
+  clear:both;
+  margin:15px 0 14px;
+  border:none;
+  border-bottom:1px dashed #d1e5e8;
+  height:auto;}
+
+abbr,
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666; }
+
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+
+.floatleft { float:left; }
+.floatright { float:right;}
+
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+li ul,
+li ol       { margin: 0; }
+ul, ol      { margin: 0 2em 1.5em 0; padding-left: 2.5em; }
+
+li          { padding-top:.2em; padding-bottom:.2em}
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 2em 0; }
+dl dt       { font-weight: bold;  padding-top:.2em; padding-bottom:.2em}
+dd          { margin-left: 1.5em; padding-top:.2em; padding-bottom:.2em}
+
+  
+  ul.check li, ul.arrow li, ul.cross li, ul.light li, ul.star li, ul.note li {
+    list-style-type:none;
+    background-repeat: no-repeat; 
+    background-position: center left;
+    padding: 4px 0 3px 28px}
+    
+    ul.check li {
+      background-image:url(../images/typo_check.png);}
+    ul.arrow li { 
+      background-image:url(../images/typo_arrow.png);}
+    ul.cross li { 
+      background-image:url(../images/typo_cross.png);}
+    ul.light li { 
+      background-image:url(../images/typo_light.png);}
+    ul.star li { 
+      background-image:url(../images/typo_star.png);}
+    ul.note li { 
+      background-image:url(../images/typo_note.png);}  
+    
+        
+/* Tables
+-------------------------------------------------------------- */
+
+table       { width:100%; }
+th          { font-weight: bold; }
+th,td,caption { padding: 0; }
+tr.even td  { background: #F3F8E5; }
+tfoot       { font-style: italic; }
+caption     { font-style:italic;  }
+
+
+
+/* Table with Decoration
+Use the class "custom" to decorate your tables,
+Also the table with class "category" below is used by Joomla to output
+some of the tables into the the Joomla core components */
+
+table.custom,
+table.category { 
+  clear:both;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-shadow: 0 1px 0 #fff;
+  background: #fff;
+  border:1px solid #dcdcdc;
+  border-bottom:none;}
+  
+  table.custom td,
+  table.category td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #dcdcdc;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 0 #fff;
+     box-shadow: 0 1px 0 #fff;}
+
+    table.custom  tr,
+    table.category  tr {
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease;}
+    
+    table.category tr.cat-list-row1,
+    table.custom tr.cat-list-row1 {
+      background:#eee}
+
+  
+  table.category thead th,
+  table.custom thead th {
+    font-size:1.3em;
+    font-family:"Hermes BG", "Droid Sans",Verdana, Arial, Helvetica, sans-serif;
+    text-align:left;
+    padding:7px 10px;
+    font-weight:normal;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,1);
+    background:#303030;
+    background: -moz-linear-gradient(top, #4A4A4A, #303030);
+    background: -webkit-linear-gradient(top, #4A4A4A, #303030);
+    background: -ms-linear-gradient(top, #4A4A4A, #303030);
+    background: linear-gradient(top, #4A4A4A, #303030);}
+    table.category thead th a,
+    table.custom thead th a {
+      color:#fff!important}
+
+
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+
+.small      { font-size: .9em; color:#999}
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
+.highlight  { font-style:italic; color:#444; background:#F7F7E9; padding:0 .15em!important; font-weight:normal!important; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
+
+.first      { margin-left:0; padding-left:0; }
+.last       { margin-right:0; padding-right:0; }
+.top        { margin-top:0; padding-top:0; }
+.bottom     { margin-bottom:0; padding-bottom:0; }
+
+.dropcap {
+  color:#555;
+  display: block; 
+  float:left; 
+  font: 6em/75% "Hermes BG", Georgia, "Times New Roman", Times, serif ;
+  padding: 5px 12px 0 0;}
+  
+  
+  

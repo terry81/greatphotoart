@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="bg-bg">
+	<title type="text">Фотография</title>
+	<subtitle type="text">GreatPhotoArt.com</subtitle>
+	<link rel="alternate" type="text/html" href="http://greatphotoart.com"/>
+	<id>http://greatphotoart.com/photography</id>
+	<updated>2021-01-05T20:17:52+00:00</updated>
+	<generator uri="http://joomla.org" version="2.5">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://greatphotoart.com/photography?format=feed&amp;type=atom"/>
+	<entry>
+		<title>360 панорама</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/photography/360panorama"/>
+		<published>2016-06-09T18:42:20+00:00</published>
+		<updated>2016-06-09T18:42:20+00:00</updated>
+		<id>http://greatphotoart.com/photography/360panorama</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;360 панорама&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;360 панорама&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Фотография" />
+	</entry>
+	<entry>
+		<title>Editorial фотография</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/photography/editorial-photography"/>
+		<published>2013-04-20T14:49:58+00:00</published>
+		<updated>2013-04-20T14:49:58+00:00</updated>
+		<id>http://greatphotoart.com/photography/editorial-photography</id>
+		<author>
+			<name>Administrator</name>
+			<email>tollodim@gmail.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Снимане на големи събития, концерти, представяния, корпоративни събития&lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Снимане на големи събития, концерти, представяния, корпоративни събития&lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Фотография" />
+	</entry>
+	<entry>
+		<title>Рекламна фотография</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/photography/reklamna-fotografia"/>
+		<published>2013-02-03T12:57:54+00:00</published>
+		<updated>2013-02-03T12:57:54+00:00</updated>
+		<id>http://greatphotoart.com/photography/reklamna-fotografia</id>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Заснемане на печатна реклама от концепцията до обработката на снимките&lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Заснемане на печатна реклама от концепцията до обработката на снимките&lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Фотография" />
+	</entry>
+	<entry>
+		<title>Продуктова фотография</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/photography/produktova-fotografia"/>
+		<published>2012-01-04T08:10:06+00:00</published>
+		<updated>2012-01-04T08:10:06+00:00</updated>
+		<id>http://greatphotoart.com/photography/produktova-fotografia</id>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Продуктова фотография в сферата на модата, хранителните продукти, интериор и екстериор&lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Продуктова фотография в сферата на модата, хранителните продукти, интериор и екстериор&lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Фотография" />
+	</entry>
+	<entry>
+		<title>Корпоративна фотография</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/photography/corporativna-fotografia"/>
+		<published>2012-01-04T08:10:06+00:00</published>
+		<updated>2012-01-04T08:10:06+00:00</updated>
+		<id>http://greatphotoart.com/photography/corporativna-fotografia</id>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Заснемане на корпоративни портрети &lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Заснемане на корпоративни портрети &lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Фотография" />
+	</entry>
+</feed>

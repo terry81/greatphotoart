@@ -1,0 +1,380 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2012 IceTheme. All Rights Reserved
+  
+  License:
+  GNU General Public License version 2 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+#wrapper {
+    margin: 0 auto;
+    width: 960px;
+	padding:20px 0}
+	
+	
+	.ice-panel-default-left #wrapper,
+	.ice-panel-default-right #wrapper {
+		padding:0}
+
+
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;}
+	
+
+.clearfix:after, .container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+ .modules-wrap {
+    margin-right: -29px !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.ice-panel-default { 
+    position:absolute;
+    z-index:10000000;
+    padding:0; 
+    top:0px;
+    width:auto; 
+    height:auto;}
+.ice-panel-default.fixed{
+    position:fixed;
+}
+.ice-panel-default .icepanel { display:none; }
+.ice-panel-default-left .icepanel {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #000000;
+    border:1px solid #111111;
+    border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+    height: auto;
+    padding: 30px 30px 30px 130px;
+
+}
+
+.ice-panel-default .icepanel p{
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #cccccc;
+}
+
+.ice-panel-default .icepanel a, .ice-panel-default .icepanel a:visited{
+    margin: 0;
+    padding: 0;
+    color: #F0C237;
+    text-decoration: none;
+}
+
+.ice-panel-default .icepanel a:hover, .ice-panel-default .icepanel a:visited:hover{
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.ice-panel-default-left .icepanel_button {
+    position: absolute;
+    text-decoration: none;
+    top: 80px; left: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 40px 20px 15px;
+    font-weight: 700;
+    background:#333333 url(images/plus.png) 85% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    display: block;
+}
+
+.ice-panel-default-left .icepanel_button:hover{
+    position: absolute;
+    text-decoration: none;
+    top: 80px; left: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 40px 20px 20px;
+    font-weight: 700;
+    background:#222222 url(images/plus.png) 85% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    display: block;
+}
+
+.ice-panel-default-left .parent_active {
+    background:#222222 url(images/minus.png) 85% 55% no-repeat;
+}
+
+.ice-panel-default .columns{
+    clear: both;
+    width: 330px;
+    padding: 0 0 20px 0;
+    line-height: 22px;
+}
+
+.ice-panel-default .colleft{
+    float: left;
+    width: 130px;
+    line-height: 22px;
+}
+
+.ice-panel-default .colright{
+    float: right;
+    width: 130px;
+    line-height: 22px;
+}
+/*Style for the position right*/
+.ice-panel-default-right{
+    right: 0px;
+}
+.ice-panel-default-right .icepanel{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #000000;
+    border:1px solid #111111;
+    border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+    height: auto;
+    padding: 30px 130px 30px 30px;
+}
+.ice-panel-default-right .icepanel_button {
+    position: absolute;
+    text-decoration: none;
+    top: 80px; right: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 15px 20px 40px;
+    font-weight: 700;
+    background:#333333 url(images/plus.png) 15% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    display: block;
+}
+
+.ice-panel-default-right .icepanel_button:hover{
+    position: absolute;
+    text-decoration: none;
+    top: 80px; right: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 20px 20px 40px;
+    font-weight: 700;
+    background:#222222 url(images/plus.png) 15% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    display: block;
+}
+.ice-panel-default-right .parent_active{
+    background:#222222 url(images/minus.png) 15% 55% no-repeat;
+
+}
+/*Style for the position top*/
+.ice-panel-default-top{
+    width:100%;
+    margin:auto;
+    top:0px;
+}
+.ice-panel-default-top .icepanel{
+    position: absolute;
+    top: 0px;
+    background: #000000;
+    border:1px solid #111111;
+    width: 100%;
+}
+.ice-panel-default-top .icepanel_button{
+    background-color: #000000;
+    color: #fff;
+    display: block;
+    float: right;
+    font-family: Arial;
+    height: 24px;
+    line-height: 24px;
+    padding: 3px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    position: absolute;
+}
+.ice-panel-default-top .button_left {
+    left: 0;
+}
+.ice-panel-default-top .button_center {
+    left: 45%;
+}
+.ice-panel-default-top .button_right {
+    right: 0;
+}
+.ice-panel-default-top .icepanel_button:hover{
+  
+}
+.ice-panel-default-top a.active.trigger {
+    background: url(images/minus.png) no-repeat scroll -7% 54% transparent;
+    padding-left: 20px; 
+}
+
+.ice-panel-default.fixed .icepanel_button{
+    position:fixed;
+}
+.ice-panel-default.fixed .icepanel_button:hover{
+    position:fixed;
+}
+
+.ice-panel-default-top a {
+    color: #E6DD00;
+}
+#panel_button_195 a.trigger:hover {
+    color: #E6DD00;
+}
+
+
+
+/* BLOCK STYLES */
+form#login-form{
+	padding-top:0px;
+}
+.icepanel_block {
+    float: left;
+    height: 90%;
+    margin: 1%;
+    overflow: hidden;
+}
+	.icepanel_block h3{
+		color: #fff;
+		margin-bottom:5px;
+		font-size:1.6em;
+	}
+
+.icepanel-login-cell {
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.icepanel-login-float-right {
+    float: right;
+    margin-right: 40px;
+}
+
+#icepanel-login{
+	clear:both;
+	margin-top:30px;
+}
+.icepanel-login-cell a {
+    border: none !important;
+    text-decoration: none;
+}
+.cpanel-login-mode {
+    padding: 20px 0 !important;
+}
+#login-cell-username input, #login-cell-password input {
+    background-color: #fff !important;
+    height: 12px;
+    padding-left: 20px;
+}
+#login-cell-username input {
+    background: url('images/user.png') no-repeat left center;
+}
+
+#login-cell-password input {
+    background: url('images/password.png') no-repeat left center;    
+}
+.icepanel {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.login-cell-logout input[type=submit] {
+    border: 1px outset #2b2b2b;
+    background-color: #2b2b2b;
+    color: #fff;  
+}
+
+a.trigger {
+	font-size:.9em;
+      color: #fff;
+	  -webkit-transition: all 0.3s ease;
+	  -moz-transition: all 0.3s ease;
+	  -o-transition: all 0.3s ease;
+	  transition: all  0.3s ease;
+}
+a.trigger:hover {
+	text-decoration:underline;
+}
+
+ .btn_close_inside {
+    background: url(images/minus.png) no-repeat top left transparent;
+    border: medium none !important;
+    float: right;
+    font-size: 0;
+    height: 20px;
+    position: absolute;
+    text-align: center;    
+    vertical-align: middle;
+    width: 20px;   
+}
+.ice-panel-default-left .btn_close_inside {
+    right: 15px;
+    top: 13px;
+}
+.ice-panel-default-top .btn_close_inside {
+    right: 15px;
+    top: 15px;
+}
+
+.ice-panel-default-right .btn_close_inside {
+    left: 15px;
+    top: 13px;
+}
+#login-cell-button input, #login-cell-logout input {
+    background-color: #FFFFFF;
+    border:none !important;
+    box-shadow: 0 0 0;
+    color: #777!important;
+    cursor: pointer;
+    padding: 2px 5px;
+    text-shadow: 0 0 0;
+}
+.parent_inactive {
+    display: block !important;
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="bg-bg">
+	<title type="text">Мултимедия</title>
+	<subtitle type="text">GreatPhotoArt.com</subtitle>
+	<link rel="alternate" type="text/html" href="http://greatphotoart.com"/>
+	<id>http://greatphotoart.com/multimedia</id>
+	<updated>2021-01-05T20:20:56+00:00</updated>
+	<generator uri="http://joomla.org" version="2.5">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://greatphotoart.com/multimedia?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Пейзажи от Земята и Луната - Фотоизложба </title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/38-пейзажи-от-земята-и-луната-една-наша-фотоизложба"/>
+		<published>2015-05-04T17:55:00+00:00</published>
+		<updated>2015-05-04T17:55:00+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/38-пейзажи-от-земята-и-луната-една-наша-фотоизложба</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Разказ от първо лице на Петър Чолаков и Боряна Иринкова за един чудесен фотопленер до островът на лунните пейзажи - Лансароте. Както и за фотопленерът до Куба. Снмики от тях са събрани в изложбата &quot;Пейзажи от Земята и Луната&quot;. . Следващият фотопленер до Луната ще се проведе от 3 до 9 ноември 2015 г. Повече информация &lt;a href=&quot;fotoplener/32/event_details#.VUd52vmqqko&quot; target=&quot;_blank&quot;&gt;ТУК&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{videobox}&lt;span&gt;YOBvfD0j23E&lt;/span&gt;||width=900;{/videobox}&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Разказ от първо лице на Петър Чолаков и Боряна Иринкова за един чудесен фотопленер до островът на лунните пейзажи - Лансароте. Както и за фотопленерът до Куба. Снмики от тях са събрани в изложбата &quot;Пейзажи от Земята и Луната&quot;. . Следващият фотопленер до Луната ще се проведе от 3 до 9 ноември 2015 г. Повече информация &lt;a href=&quot;fotoplener/32/event_details#.VUd52vmqqko&quot; target=&quot;_blank&quot;&gt;ТУК&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{videobox}&lt;span&gt;YOBvfD0j23E&lt;/span&gt;||width=900;{/videobox}&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Фотопленер до Луната</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/37-фотопленер-до-луната"/>
+		<published>2015-05-04T17:49:37+00:00</published>
+		<updated>2015-05-04T17:49:37+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/37-фотопленер-до-луната</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Един чудесен фотопленер до островът на лунните пейзажи - Лансароте. Неземно и прекрасно! Един от най-добрите ни фотопленери, предизвикал небивал интерес. Следващият фотопленер до Луната ще се проведе от 3 до 9 ноември 2015 г. Повече информация &lt;a href=&quot;fotoplener/32/event_details#.VUd52vmqqko&quot; target=&quot;_blank&quot;&gt;ТУК&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{videobox}sCar2V9S4cI||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Един чудесен фотопленер до островът на лунните пейзажи - Лансароте. Неземно и прекрасно! Един от най-добрите ни фотопленери, предизвикал небивал интерес. Следващият фотопленер до Луната ще се проведе от 3 до 9 ноември 2015 г. Повече информация &lt;a href=&quot;fotoplener/32/event_details#.VUd52vmqqko&quot; target=&quot;_blank&quot;&gt;ТУК&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{videobox}sCar2V9S4cI||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Репортаж от фото курса на Great Photo Art</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/27-reportaj-za-fototkursa-na-great-photo-art"/>
+		<published>2013-05-11T17:30:03+00:00</published>
+		<updated>2013-05-11T17:30:03+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/27-reportaj-za-fototkursa-na-great-photo-art</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Веднъж и нас някой да ни снима. Е, в случая не беше кой да е, а Нова тв. Вижте репортажа за нас!&lt;/p&gt;
+&lt;p&gt;{videobox}d0WvWX_PNaI||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Веднъж и нас някой да ни снима. Е, в случая не беше кой да е, а Нова тв. Вижте репортажа за нас!&lt;/p&gt;
+&lt;p&gt;{videobox}d0WvWX_PNaI||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Great Photo Art Заснемане на видео. Протести!</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/31-great-photo-art-заснемане-на-видео-протести"/>
+		<published>2013-11-07T18:06:03+00:00</published>
+		<updated>2013-11-07T18:06:03+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/31-great-photo-art-заснемане-на-видео-протести</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Един чудесен пример за репортажно видео заснето с безогледален фотоапарат.&lt;/p&gt;
+&lt;p&gt;{videobox}Whl2gsQhM1g||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Един чудесен пример за репортажно видео заснето с безогледален фотоапарат.&lt;/p&gt;
+&lt;p&gt;{videobox}Whl2gsQhM1g||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Фото курс на Great Photo Art V15</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/24-foto-kurs-great-photo-art-v15"/>
+		<published>2013-05-11T17:19:57+00:00</published>
+		<updated>2013-05-11T17:19:57+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/24-foto-kurs-great-photo-art-v15</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;div&gt;Това видео е подарък от нашите мили ученици от курса по фотография за начинаещи Випуска №15. Уловили са всички характерни за курса моменти.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div id=&quot;foo2&quot;&gt;{videobox}KGabEJTS6VA||width=900;{/videobox}&lt;/div&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;div&gt;Това видео е подарък от нашите мили ученици от курса по фотография за начинаещи Випуска №15. Уловили са всички характерни за курса моменти.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div id=&quot;foo2&quot;&gt;{videobox}KGabEJTS6VA||width=900;{/videobox}&lt;/div&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Уъркшоп Продуктова фотография</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/21-workshop-produktova-fotografia"/>
+		<published>2013-03-23T22:13:46+00:00</published>
+		<updated>2013-03-23T22:13:46+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/21-workshop-produktova-fotografia</id>
+		<author>
+			<name>Administrator</name>
+			<email>tollodim@gmail.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Видео от уъркшопа по Продуктова фотография. Научихме се как да снимаме предмети така, че те да &quot;оживеят&quot; в снимките ни.&lt;/p&gt;
+&lt;p&gt;{videobox}TxuFMLd4Sb8||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Видео от уъркшопа по Продуктова фотография. Научихме се как да снимаме предмети така, че те да &quot;оживеят&quot; в снимките ни.&lt;/p&gt;
+&lt;p&gt;{videobox}TxuFMLd4Sb8||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Фотопленер в Керкини</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/26-fotoplener-v-vkerkini"/>
+		<published>2013-05-11T17:25:53+00:00</published>
+		<updated>2013-05-11T17:25:53+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/26-fotoplener-v-vkerkini</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Едно страхотно видео от фотопленера в Керкини, Гърция, който проведохме заедно с Photosynthesis през 2012 г. Беше страшно забавно и полезно.&lt;/p&gt;
+&lt;p&gt;{videobox}_6hwla6Gwgo||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Едно страхотно видео от фотопленера в Керкини, Гърция, който проведохме заедно с Photosynthesis през 2012 г. Беше страшно забавно и полезно.&lt;/p&gt;
+&lt;p&gt;{videobox}_6hwla6Gwgo||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Фотоизложба &quot;Къде зимуват котараците?&quot;</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/19-fotoizlojba-kude-zimuvat-kotaracite"/>
+		<published>2013-03-21T17:43:17+00:00</published>
+		<updated>2013-03-21T17:43:17+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/19-fotoizlojba-kude-zimuvat-kotaracite</id>
+		<author>
+			<name>Administrator</name>
+			<email>tollodim@gmail.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;div&gt; Една от най-добрите изложби на наши ученици, организирани от неуморния ни екип. Спазваме традицията да подреждаме изложбите на нашите ученици на нетрадиционни, но много арт места. Това е &quot;Плюс това&quot;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div id=&quot;foo2&quot;&gt;{videobox}wN9jOre6A74||width=900;{/videobox}&lt;/div&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;div&gt; Една от най-добрите изложби на наши ученици, организирани от неуморния ни екип. Спазваме традицията да подреждаме изложбите на нашите ученици на нетрадиционни, но много арт места. Това е &quot;Плюс това&quot;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div id=&quot;foo2&quot;&gt;{videobox}wN9jOre6A74||width=900;{/videobox}&lt;/div&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>За фотографията и хората</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/20-za-fotografiata-i-horata"/>
+		<published>2013-03-23T20:03:47+00:00</published>
+		<updated>2013-03-23T20:03:47+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/20-za-fotografiata-i-horata</id>
+		<author>
+			<name>Administrator</name>
+			<email>tollodim@gmail.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Едно видео, което представя накратко курсовете по фотография за начинаещи на Great Photo Art.&lt;/p&gt;
+&lt;p&gt;{videobox}6lYO1ZzcXH0||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Едно видео, което представя накратко курсовете по фотография за начинаещи на Great Photo Art.&lt;/p&gt;
+&lt;p&gt;{videobox}6lYO1ZzcXH0||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+	<entry>
+		<title>Photo Soiree</title>
+		<link rel="alternate" type="text/html" href="http://greatphotoart.com/multimedia/25-photo-soiree"/>
+		<published>2013-05-11T17:22:39+00:00</published>
+		<updated>2013-05-11T17:22:39+00:00</updated>
+		<id>http://greatphotoart.com/multimedia/25-photo-soiree</id>
+		<author>
+			<name>Eli</name>
+			<email>photo@greatphotoart.com</email>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;За първи път празнувахме снимайки Световния ден на фотографията, миналата година, на 19 август. Възнамеряваме да го превърнем в традиция.&lt;/p&gt;
+&lt;p&gt;{videobox}TEAQaQC9JvM||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;За първи път празнувахме снимайки Световния ден на фотографията, миналата година, на 19 август. Възнамеряваме да го превърнем в традиция.&lt;/p&gt;
+&lt;p&gt;{videobox}TEAQaQC9JvM||width=900;{/videobox}&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Галерии" />
+	</entry>
+</feed>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+body {background: #dde3e3;font-family: 'Didact Gothic', sans-serif;}
+#header {padding: 30px 0 15px 0; background: transparent; width: 960px; height: 50px;margin: 0 auto;}
+#wrapper-menu { border: 3px dotted #000;}
+#featured, .wrapper-menu, #grid-top .row, #main-content {width: 910px; margin: 0 auto;}
+#footer {background: #96969e url(http://greatphotoart.com/blog/wp-content/themes/twentytwelve/images/camera.png) no-repeat bottom right;}
+#footer .row .module {box-sizing: border-box; margin: 10px 5px 10px 0; float: left; padding: 0 !important;}
+#footer .container {width: 910px; margin: 0 auto;}
+#footer .row { width: 100% !important; margin: 0; padding: 0;}
+#footer h3 {font-size: 14px;}
+#header h2 {visibility:hidden; height: 0; font-size: 0;}
+#logo {width: 400px !important;}
+#top {width: 400px; float: right;}
+#top .custom {float: right; height: 30px; margin-right: 25px;}
+#top h3 {visibility:hidden; height: 0; font-size: 0;}
+.custom {height: 50px; width: 70%; background-repeat:no-repeat; padding-bottom: 15px;}
+.container {width: 100%; margin: 0 auto;}
+#featured h3 {height: 5px; font-size: 0px;}
+.navbar {height:45px; background: #a5bd33; border-radius: 5px;}
+.navbar-inner {background: transparent; border: 0px; box-shadow: 0px 0px 0px 0px transaprent; font-size: 15px;}
+.btn, .btn-navbar {background: transparent;}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: #ffffff; font-weight: bold;}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {color: #ffffff; text-shadow: 0 1px 0 #4c4c4c;}
+.navbar .nav > li > a {color: #ffffff; text-shadow: 0 1px 0 #4c4c4c; font-weight: bold;}
+.nabvar ul.dropdown-menu {background: #a5bd33;}
+#main-content .blog .item {width: 275px;}
+.blog .items-row {width: 960px;}
+.blog .items-row .item{margin: 14px 20px 14px 5px;}
+.blog .items-row .item  img {width: 100%; height: 200px;}
+.navigator {height: 0px !important; visibility: hidden;}
+.navigator h2 {font-size: 18px;}
+.caret {visibility: hidden !important; width: 0; height: 0;}
+#main-content .item-page {padding-bottom: 10px; width: 910px;}
+#main-content .item-page h2  {margin: 0 0 10px 0; vertical-align: top;}
+#main-content .item-page h2 a, #main-content .page-header a {font-size: 16px; line-height: 20px; color: #5e7103; text-decoration: none;}
+#main-content #main {width: 100%;margin: 0px;box-sizing: border-box;padding: 0px 5px;}
+#main-content .row {vertical-align: top;}
+#main-content .page-header {margin-top:0;}
+#main-content .blog .img-intro-left, #main-content .item-page .img-fulltext-none {overflow: hidden; height: 210px; width: 100%; border: 5px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px;}
+#main-content .item-page .img-fulltext-none {width: 900px;}
+#main-content .item-page .grafic-button { background: #a5bd33; display: inline-block; float: right; padding:10px; margin: -35px 0px 10px 0px; text-align: center; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; }
+#main-content .item-page .grafic-button a {color: #ffffff;}
+#main-content .blog .img-intro-left .img-polaroid, #main-content .item-page .img-polaroid {background: transparent; margin: -200px 0 0 -1px; padding: 0; width: 120%;}
+#main-content .blog .page-header {padding: 0; margin: 0;}
+#main-content ul {padding: 0; margin: 0;}
+#main-content ul li.ff_listItem {padding: 0; margin: 0; list-style-type: none;}
+#icagenda .event {height: 420px !important; overflow: hidden;}
+#grid-top .album {width:100%; float: left; text-align: center; background: url(../images/theme1/picframe.png) top left no-repeat; padding:30px 26px 0px 8px; margin-top: 10px;}
+#grid-top .album img {width: 263px; height: 175px; border-radius: 3px; -mox-border-radius: 3px; -webkit-border-radius: 3px;}
+#grid-top .album_name {margin-top: 40px;}
+#grid-top .row {height: 250px; padding-bottom: 0;}
+#grid-top .module {width: 33%;padding: 0; margin: 0;}
+#grid-top .custom {width:100%;}
+#grid-bottom, #grid-bottom2 {margin: 0 auto; width: 910px; height: 250px;}
+#grid-bottom2 {height: 100px; width: 900px;}
+#grid-bottom2 .custom {width: 910px; display: block;}
+#grid-bottom h3, #main-content .item-page h3 {font-size: 16px;}
+#grid-bottom .custom {width: 100%; display: block;}
+#footer {height: 360px;}
+#footer .custom p {width: 280px !important; margin: 0 10px 0 0; font-size: 12px; color: rgb(51, 51, 51);}
+#footer .module.last {float: right; margin-right: 0;}
+#footer img {border: 1px solid rgba(0, 0, 0, 0.2); background-color: #f3f3f3; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3p 0px; padding: 3px; margin:0; box-sizing: border-box; float: left; width: 100px !important; margin-right: 5px;}
+#footer .vcard {padding: 5px; margin: 0px; box-sizing: border-box; width: 290px; overflow: hidden; border-bottom: 0px solid rgba(0, 0, 0, 0.2);}
+#footer .newsflash-title a {color: #333333; font-weight: normal;}
+#footer {color: #464646;} 
+#footer a {color: #ffffff;}
+#footer a:hover {color: #ffffff;}
+
+.dropdown-menu a, .dropdown-menu span.separator {padding: 10px 8px;}
+.navbar .nav>li>a {padding: 14px;}

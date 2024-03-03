@@ -1,0 +1,128 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  (C) 2008 - 2011 IceTheme
+  
+  License:
+  GNU/GPL http://www.gnu.org/copyleft/gpl.html
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+.ice-breakingnews{
+	height:30px;
+	margin-bottom:0;
+	position:relative;}
+	
+	.ice-breakingnews-wrapper{
+		width:100%;
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		float:right;}
+		
+	
+		.ice-breakingnew-item{
+			overflow:hidden;
+			padding:0px;
+			height:100%;
+			width:100%;
+			position:absolute;}
+			
+			
+			.ice-breakingnew-item a{color:#555;}
+			
+			
+				.ice-breakingnew-item span {
+					font-size:90%;}
+					
+					
+					
+
+
+/* item navigator */
+.ice-module-nav {  
+	float:left; 
+	padding-left:5px; 
+	padding-right:10px;}
+
+	.ice-module-nav .ice-module-title { 
+		float:left;
+		font-weight:bold;
+		color:#a42222;
+		padding-right:8px}
+		 
+		 /* arrows */
+		.ice-button-driven {
+			float:right;
+			margin-top:4px;
+			padding: 0;
+			z-index:100;
+			position:relative;}
+	
+			.ice-button-driven span{
+				position:absolute;
+				top:-10000px}
+				
+			.ice-button-driven a {	
+				height:15px;
+				width:15px;
+				display:block;}
+	
+	
+			.ice-button-driven .ice-button-previous  {
+				background:url(images/icescroller_prev.png) no-repeat scroll center top transparent;	
+				float:left;
+				padding-left:2px;
+				padding-right:5px;}
+				
+					.ice-button-driven  .ice-button-previous:hover  {
+						background-position:center bottom;}
+						
+			.ice-button-driven .ice-button-next {
+				background:url(images/icescroller_next.png) no-repeat scroll center top transparent;
+				float:right}
+				
+					.ice-button-driven .ice-button-next:hover {
+						background-position:center bottom;}
+						
+				
+						
+/* Ajax Loading */		
+.ice-breakingnews .ice-loading {
+	top: -6px;
+	left: 5px;
+    position: absolute;
+    width: 16px;
+	height:16px;
+    z-index: 999;
+	padding:10px;
+	display:none;
+	box-shadow:0 0 12px #999;
+	border-radius:3px;
+	background-color:#fff;
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;}
+	
+	
+
+.ice-pages-hidden { display:none; }
+
+
+/* ToolTip
+--------------*/
+
+.tip .tip-text{
+	overflow:hidden;}
+	
+.tip .tooltip-image{
+	float:left;
+	padding-bottom:10px;
+	padding-right: 15px;}
+	
+.tip .tooltip-content{}
+
+	.tip .item-info { font-size:.9em; margin-bottom:1em; color:#888;}
+		
+		.tip .item-info span { margin-right:10px;}

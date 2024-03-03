@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Фотография</title>
+		<description><![CDATA[GreatPhotoArt.com]]></description>
+		<link>http://greatphotoart.com/photography</link>
+		<lastBuildDate>Tue, 05 Jan 2021 20:17:52 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://greatphotoart.com/photography?format=feed&amp;type=rss"/>
+		<language>bg-bg</language>
+		<item>
+			<title>360 панорама</title>
+			<link>http://greatphotoart.com/photography/360panorama</link>
+			<guid isPermaLink="true">http://greatphotoart.com/photography/360panorama</guid>
+			<description><![CDATA[<div class="feed-description"><p>360 панорама</p></div>]]></description>
+			<author>photo@greatphotoart.com (Eli)</author>
+			<category>Фотография</category>
+			<pubDate>Thu, 09 Jun 2016 18:42:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Editorial фотография</title>
+			<link>http://greatphotoart.com/photography/editorial-photography</link>
+			<guid isPermaLink="true">http://greatphotoart.com/photography/editorial-photography</guid>
+			<description><![CDATA[<div class="feed-description"><p>Снимане на големи събития, концерти, представяния, корпоративни събития</p>
+</div>]]></description>
+			<author>tollodim@gmail.com (Administrator)</author>
+			<category>Фотография</category>
+			<pubDate>Sat, 20 Apr 2013 14:49:58 +0000</pubDate>
+		</item>
+		<item>
+			<title>Рекламна фотография</title>
+			<link>http://greatphotoart.com/photography/reklamna-fotografia</link>
+			<guid isPermaLink="true">http://greatphotoart.com/photography/reklamna-fotografia</guid>
+			<description><![CDATA[<div class="feed-description"><p>Заснемане на печатна реклама от концепцията до обработката на снимките</p>
+</div>]]></description>
+			<category>Фотография</category>
+			<pubDate>Sun, 03 Feb 2013 12:57:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>Продуктова фотография</title>
+			<link>http://greatphotoart.com/photography/produktova-fotografia</link>
+			<guid isPermaLink="true">http://greatphotoart.com/photography/produktova-fotografia</guid>
+			<description><![CDATA[<div class="feed-description"><p>Продуктова фотография в сферата на модата, хранителните продукти, интериор и екстериор</p>
+</div>]]></description>
+			<category>Фотография</category>
+			<pubDate>Wed, 04 Jan 2012 08:10:06 +0000</pubDate>
+		</item>
+		<item>
+			<title>Корпоративна фотография</title>
+			<link>http://greatphotoart.com/photography/corporativna-fotografia</link>
+			<guid isPermaLink="true">http://greatphotoart.com/photography/corporativna-fotografia</guid>
+			<description><![CDATA[<div class="feed-description"><p>Заснемане на корпоративни портрети </p>
+</div>]]></description>
+			<category>Фотография</category>
+			<pubDate>Wed, 04 Jan 2012 08:10:06 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

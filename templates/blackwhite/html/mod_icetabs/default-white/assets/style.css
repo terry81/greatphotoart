@@ -1,0 +1,209 @@
+/**
+ * IceTabs Module for Joomla 1.6 By IceTheme
+ * 
+ * 
+ * @copyright	Copyright (C) 2008 - 2011 IceTheme.com. All rights reserved.
+ * @license		GNU General Public License version 2
+ * 
+ * @Website 	http://www.icetheme.com/Joomla-Extensions/icetabs.html
+ * @Support 	http://www.icetheme.com/Forums/IceTabs/
+ *
+ */
+
+ 
+.ice-tabs-white { 
+	overflow:hidden; 
+	width:auto;
+	padding-top:20px; 
+	height:auto;}
+	
+	.ice-tabs-white li {
+		list-style-type:none!important;	}
+	
+		
+/* main flash */
+.ice-tabs-white .ice-main-wapper{ 
+	overflow:hidden;
+	position:relative;}
+	
+	.ice-tabs-white .ice-main-wapper .ice-main-item { 
+		overflow:hidden;
+		padding:0px;
+		margin:0px; 
+		height:100%;
+		width:100%;
+		position:absolute;}
+		
+		
+		.ice-tabs-white .ice-main-wapper .ice-main-item .ice-description{
+			padding:0;
+			line-height:2em;
+			font-size:1.3em;}
+			
+			
+		.ice-tabs-white .ice-main-wapper .ice-main-item h3.ice-title { 
+			line-height:1.5em;
+			font-size:2.1em;
+			padding:25px 0 0;
+			margin: 0 0 5px;}
+			
+			.ice-tabs-white .ice-main-wapper .ice-main-item h3.ice-title a {
+				color:#fff;
+				-moz-transition: all .3s ease-out;
+				-o-transition: all .3s ease-out;
+				-webkit-transition: all .3s ease-out;
+				transition: all .3s ease-out; }
+							
+				.ice-tabs-white .ice-main-wapper .ice-main-item h3.ice-title a:hover {
+					text-decoration:none;
+					text-shadow:1px 1px 15px rgba(255,255,255,.4);}
+		
+		
+		
+			.ice-tabs-white .ice-main-wapper .ice-main-item .ice-description img {
+				float:right;
+				margin:0 0 0 20px}
+			
+			.ice-tabs-white .ice-main-wapper .ice-main-item .ice-description p.readmore {
+				clear:none;
+				padding-top:8px;
+				margin-bottom:0}
+				
+				
+				.ice-tabs-white .ice-main-wapper .ice-main-item .ice-description p.readmore a {
+					background-color:#662D0D;
+					box-shadow:none;
+					padding:0px 12px;
+					margin:0 0 0 15px;
+					border:1px solid #753D15}
+					
+					.ice-tabs-white .ice-main-wapper .ice-main-item .ice-description p.readmore a:hover {
+						padding:0px 12px;
+						border-color:#A1531D;
+						background-image:none}
+							
+				
+			
+/* item navigator */
+.ice-tabs-white .ice-navigator-wrapper { 
+	position:relative;}
+	
+	.ice-tabs-white .ice-navigator-outer  { 
+		position:absolute; 
+		right:0;
+		top:0px;
+		z-index:3;
+		height:300px;
+		width:310px;
+		overflow:hidden }
+		 
+		.ice-tabs-white  ul.ice-navigator { 
+			top:0;
+			padding:0; 
+			margin:0;
+			position:absolute;
+			width:100%;}
+			
+			.ice-tabs-white  ul.ice-navigator li { 
+				cursor:hand;
+				cursor:pointer;
+				list-style:none!important;
+				width:100%;
+				border-bottom:1px solid #fff;
+				padding:0!important;
+				margin:0!important;
+				background:#eee; }
+				
+			
+				
+				.ice-tabs-white  ul.ice-navigator li div {
+					padding:1em 1.25em;}
+					
+				.ice-tabs-white .ice-navigator li .ice-title {
+					 font-size:.9em;
+					 line-height:1.7em;
+					 font-family:Arial, Helvetica, sans-serif;
+					 font-weight:normal;
+					 margin:0!important; }
+					 
+				.ice-tabs-white .ice-navigator li div img {	
+					float:left;
+					border:1px solid #eee;
+					margin:0 .75em .75em 0;-webkit-transition:all .5s ease-out;
+				-moz-transition:all .5s ease-out;
+				-o-transition:all .5s ease-out; 
+				transition:all .5s ease-out; }
+					
+					
+					.ice-tabs-white  ul.ice-navigator li:hover img,
+					.ice-tabs-white .ice-navigator li.active img {
+						-webkit-transform: scale(1.1);
+						border-color:#ccc}
+						
+				.ice-tabs-white .ice-navigator li.active {
+					 background:#eee url(images/current_tab.png) no-repeat center left }
+
+
+/**
+ * BUTTONS CONTROL
+ */
+.ice-tabs-white .ice-buttons-control {
+	opacity:0;
+	-webkit-transition:all .5s ease-out;
+	-moz-transition:all .5s ease-out;
+	-o-transition:all .5s ease-out; 
+	transition:all .5s ease-out;}
+	
+	#showcase:hover .ice-buttons-control {
+		opacity:1;}
+	
+	.ice-tabs-white .ice-next, 
+	.ice-tabs-white .ice-previous {
+		background:url(images/arrows.png) no-repeat;	
+		width:58px;
+		height:46px;
+		text-indent:-9999em;
+		position:absolute;
+		z-index:10;
+		margin:0px;
+		top:40%; 
+		cursor:pointer;}
+		
+			
+		.ice-tabs-white .ice-previous {	
+			background-position:0 0;
+			left:0}
+			.ice-tabs-white .ice-previous:hover { 
+				background-position:0 -92px}
+			
+		.ice-tabs-white .ice-next {
+			background-position:0 -46px;			
+			right:0;}
+			.ice-tabs-white .ice-next:hover {
+				background-position:0 -138px;}
+			
+		
+/*
+ * css for override move the main wapper to the right side 
+ */
+ /* RIGHT ALIGMENT */
+.ice-right-sl-white .ice-navigator-wrapper { float:right; }
+.ice-right-sl-white .ice-main-wapper		  { margin-left:auto; margin-right:inherit; float:right }
+.ice-right-sl-white .ice-navigator-outer   { position:relative }
+ /* LEFT ALIGMENT */
+.ice-left-sl-white .ice-navigator-wrapper { float:left; }
+.ice-left-sl-white .ice-main-wapper		 { margin-left:auto; margin-right:inherit; float:left }
+.ice-left-sl-white .ice-navigator-outer	 { position:relative }
+.ice-left-sl-white .ice-navigator li.active { background-image:url(images/current_tab_l.png); background-position:center right;}
+				 
+ /* TOP, BOTTOm ALIGMENT */
+.ice-top-sl-white .ice-main-wapper ,  .ice-bottom-sl-white .ice-main-wapper  { position:relative!important;} 
+.ice-top-sl-white .ice-navigator-outer,  .ice-bottom-sl-white .ice-navigator-outer{ position:relative; float:left }
+.ice-top-sl-white .ice-navigator, 	    .ice-bottom-sl-white .ice-navigator 		{ width:9999em !important }
+.ice-top-sl-white .ice-navigator li,     .ice-bottom-sl-white .ice-navigator li 	{ display:block; float:left; border-bottom:none; border-right:1px solid #fff; }
+/* Top Aligment */
+.ice-top-sl-white .ice-navigator li.active { background-image:url(images/current_tab_t.png); background-position:center bottom;}
+.ice-top-sl-white .ice-buttons-control { background-image:url(images/arrow_bg_t.png); top:auto; bottom:0; padding-top:12px; height:10px}
+/* Bottom Aligment */
+.ice-bottom-sl-white .ice-navigator li.active { background-image:url(images/current_tab_b.png); background-position:center top;}
+

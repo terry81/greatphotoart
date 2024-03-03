@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+	<name>siteground-j16-2</name>
+	<creationDate>19 January 2011</creationDate>
+	<author>SiteGround</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright>Siteground</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>This Joomla Template is designed by SiteGround.com and can be used free of charge. The template is suitable for personal and business Joomla sites. It can be used with many popular modules and components for Joomla. At www.siteground.com you can find more great looking free Joomla templates.</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>templates.php</filename>
+		<filename>LICENSE.txt</filename>
+	</files>
+
+	<positions>
+		<position>position-0</position>
+		<position>left</position>
+		<position>right</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_siteground-j16-2.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="social_media" type="radio" default="0" label="Show social media icons" description="Select weather to enable this widget">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="social_media_title" type="text" default="Social Widget" label="Title" description="" filter="string" />
+				<field name="facebook" type="text" default="" label="Facebook" description="Enter Facebook Username" filter="string" />
+				<field name="twitter" type="text" default="" label="Twitter" description="Enter Twitter Username" filter="string" />
+				<field name="myspace" type="text" default="" label="MySpace" description="Enter MySpace Username" filter="string" />
+				<field name="linkedin" type="text" default="" label="Linkedin" description="Enter Linkedin Username" filter="string" />
+				<field name="youtube" type="text" default="" label="Youtube" description="Enter YouTube Username" filter="string" />
+				<field name="vimeo" type="text" default="" label="Vimeo" description="Enter Vimeo Username" filter="string" />
+				<field name="flickr" type="text" default="" label="Flickr" description="Enter Flickr Username" filter="string" />
+				<field name="digg" type="text" default="" label="Digg" description="Enter Digg Username" filter="string" />
+				<field name="skype" type="text" default="" label="Skype" description="Enter Skype Username" filter="string" />
+				<field name="deviant-art" type="text" default="" label="Deviant Art" description="Enter Deviant Art Username" filter="string" />
+				<field name="ebay" type="text" default="" label="Ebay" description="Enter Ebay Shop URL" filter="string" />
+				<field name="icq" type="text" default="" label="ICQ" description="Enter ICQ Number" filter="string" />
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>
