@@ -1,0 +1,87 @@
+# =============================
+# Great Photo Art Website .gitignore
+# =============================
+# IDE / Editor settings
+.idea/
+.vscode/
+*.code-workspace
+
+# OS / Environment files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary / backup / scrap artifacts from previous cleanup operations
+*.bak
+*.bak2
+*.backup*
+*.backup_final
+*.tmp
+*.temp
+*.new
+*.cleaned
+*~
+# Specific HTML backup naming patterns seen in repo
+**/*.html.bak
+**/*.html.bak2
+**/*.html.backup*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Swap / lock / state files
+*.swp
+*.swo
+*.lock
+
+# Python (in case of helper scripts)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+.python-version
+
+# Node / frontend (if added later)
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Sass / tooling caches
+.sass-cache/
+
+# Misc tool caches
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Generated reports that are ephemeral (uncomment to ignore if not needed)
+# DEAD-LINKS-REPORT.txt
+# FINAL-VERIFICATION-REPORT.txt
+
+# Do NOT ignore documentation Markdown by default; they are part of project history
+# If you decide to ignore them later, add patterns below.
+*.md
+
+# Media preview or binary artifacts that should not be committed if generated
+*.psd
+*.ai
+*.xcf
+
+# Ensure Git keeps empty folders when needed (use .gitkeep inside them)
+# Add patterns here if you introduce build output directories.
+
+# End of file

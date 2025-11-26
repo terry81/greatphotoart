@@ -1,0 +1,155 @@
+/* Custom Styles for Great Photo Art */
+
+/* Skip to content link */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 999;
+    background: #A5BD33;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skip-to-content:focus {
+    left: 0px;
+}
+
+/* Course buttons */
+.course-button-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.course-button-list li {
+    margin: 0 1.3% 10px 0;
+    line-height: 20px;
+    float: left;
+    display: inline-block;
+    width: 24%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px;
+    border-radius: 3px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-button-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+}
+
+.course-button-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.course-button-list li.bg-green {
+    background: #A5BD33;
+}
+
+.course-button-list li.bg-dark {
+    background: #464646;
+}
+
+.course-button-list li a {
+    font-size: 1em;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px 3px;
+    text-decoration: none;
+}
+
+.course-button-list li a:hover {
+    color: #ffffff;
+}
+
+/* Social media icons */
+.social-icons {
+    float: right;
+}
+
+.social-icons img {
+    margin: 0 5px 0 0;
+    float: right;
+    transition: opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+/* Footer images */
+.vcard img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Deprecated attributes replacement */
+img {
+    border: 0;
+}
+
+/* Improve accessibility */
+a:focus:not(.nivo-prevNav):not(.nivo-nextNav),
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #A5BD33;
+    outline-offset: 2px;
+}
+
+/* Hide slider navigation arrows completely */
+.nivo-directionNav,
+.nivo-prevNav,
+.nivo-nextNav {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Keep pagination dots visible and functional */
+.nivo-controlNav {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Make sure captions display correctly */
+.nivo-caption,
+.nivo-html-caption {
+    z-index: 50 !important;
+    pointer-events: none !important;
+}
+
+.nivo-html-caption * {
+    pointer-events: none !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .course-button-list li {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .course-button-list li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .course-button-list li:nth-child(4n) {
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-button-list li {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
