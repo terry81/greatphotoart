@@ -16,27 +16,182 @@
   <link rel="stylesheet" href="https://greatphotoart.com/templates/js_wright/wright/css/joomla25.css" type="text/css" />
   <link rel="stylesheet" href="https://greatphotoart.com/templates/js_wright/css/1_template.css" type="text/css" />
   <link rel="stylesheet" href="https://greatphotoart.com/templates/js_wright/css/style-theme1.css" type="text/css" />
-  <script src="https://greatphotoart.com/media/system/js/mootools-core.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/media/system/js/core.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/media/system/js/caption.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/AG_jQuery.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.fancybox-1.3.1.pack.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.mousewheel-3.0.2.pack.js" type="text/javascript"></script>
-  <script src="https://greatphotoart.com/media/system/js/mootools-more.js" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/AG_jQuery.js" type="text/javascript" defer></script>
+  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.fancybox-1.3.1.pack.js" type="text/javascript" defer></script>
+  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.easing-1.3.pack.js" type="text/javascript" defer></script>
+  <script src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/popups/fancybox/js/jquery.mousewheel-3.0.2.pack.js" type="text/javascript" defer></script>
   <script type="text/javascript">
-window.addEvent('load', function() {
-				new JCaption('img.caption');
-			});
 var paginInitPages_1="1";
 var albumInitFolders_1="Nachinaeshti";
 var paginInitPages_1="1,1";
 var albumInitFolders_1="Nachinaeshti,Nachinaeshti_02";
-jQuery.noConflict();
   </script>
-  <link rel="stylesheet" href="../plugins/system/videobox/css/videobox.css" type="text/css" media="screen" />
-  <script src="https://api.html5media.info/1.1.5/html5media.min.js"></script><script type="text/javascript" src="../plugins/system/videobox/videobox.js"></script><script type="text/javascript">
+
+<style>
+/* Custom improvements for course page */
+.item-page {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    color: #333 !important;
+}
+
+.item-page h2, .item-page h3 {
+    color: #464646 !important;
+    font-size: 28px !important;
+    margin: 25px 0 15px 0 !important;
+    font-weight: bold !important;
+}
+
+.item-page p {
+    margin-bottom: 15px !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+.item-page strong {
+    font-weight: bold !important;
+    color: #464646 !important;
+}
+
+.item-page .gmail_default {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 12px !important;
+}
+
+.item-page a {
+    color: #A5BD33 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+
+.item-page a:hover {
+    color: #8fa329 !important;
+    text-decoration: underline !important;
+}
+
+/* Highlight important info */
+.gmail_default strong {
+    font-size: 19px !important;
+}
+
+/* Gallery improvements */
+.AG_caruBig {
+    margin: 30px 0 !important;
+}
+
+.ag_imageThumb {
+    width: 180px !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    transition: transform 0.3s ease !important;
+}
+
+.ag_imageThumb:hover {
+    transform: scale(1.05) !important;
+}
+
+/* Make lists more readable */
+.item-page ul, .item-page ol {
+    margin-left: 25px !important;
+    margin-bottom: 20px !important;
+}
+
+.item-page li {
+    margin-bottom: 10px !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+/* Highlight key sections */
+div[style*="color: #99cc00"] strong,
+span[style*="color: #99cc00"] strong {
+    font-size: 20px !important;
+    display: block !important;
+    margin: 15px 0 !important;
+}
+
+/* Fix ГРАФИК button - make text readable */
+.grafic-button {
+    background: #A5BD33 !important;
+    padding: 12px 25px !important;
+    border-radius: 5px !important;
+    display: inline-block !important;
+    margin: 20px 0 !important;
+}
+
+.grafic-button a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.grafic-button a:hover {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.grafic-button strong {
+    color: #ffffff !important;
+}
+
+/* Global fix: Ensure all links with green background have white text */
+a[style*="background: #A5BD33"],
+a[style*="background:#A5BD33"] {
+    color: #ffffff !important;
+}
+
+/* Ensure nested elements in green backgrounds also have white text */
+[style*="background: #A5BD33"] a,
+[style*="background:#A5BD33"] a {
+    color: #ffffff !important;
+}
+
+/* Fix gallery images - make them even larger for maximum impact */
+.AG_caruBig .ag_imageThumb {
+    width: 400px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+}
+
+.AG_caruBig .foo2 {
+    display: flex !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+    margin: 20px 0 !important;
+}
+
+.ag_thumbcaruBig {
+    flex-shrink: 0 !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .item-page {
+        font-size: 16px !important;
+    }
+
+    .item-page h2, .item-page h3 {
+        font-size: 24px !important;
+    }
+
+    .ag_imageThumb {
+        width: 150px !important;
+        height: 100px !important;
+    }
+
+    .AG_caruBig .ag_imageThumb {
+        width: 340px !important;
+        height: 240px !important;
+    }
+}
+</style>
+  <script type="text/javascript">
 				var displayvideo;
 				var vb_site_base = "";
 				var vb_site_root = "https://greatphotoart.com/";
@@ -86,12 +241,6 @@ jQuery.noConflict();
 <meta name="google-site-verification" content="" />
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-19549029-1', 'greatphotoart.com');
-  ga('send', 'pageview');
 </script>
 <!-- Universal Google Analytics Plugin by PB Web Development -->
 
@@ -130,7 +279,7 @@ jQuery.noConflict();
 					            <div class="nav-collapse" id="nav-menu">
 									 
 <ul class="nav menu">
-<li class="item-101"><a href="../index.html" >Фото курс</a></li><li class="item-110 deeper  parent dropdown "><a href='../photography.html' class='dropdown-toggle disabled' data-toggle='dropdown'><span class=''>Фотография</span><b class="caret"></b></a><ul class="dropdown-menu"><li class="item-121"><a href="../photography/corporativna-fotografia.html" >Корпоративна фотография</a></li><li class="item-122"><a href="../photography/produktova-fotografia.html" >Продуктова фотография</a></li><li class="item-123"><a href="../photography/reklamna-fotografia.html" >Рекламна фотография</a></li><li class="item-152"><a href="../photography/editorial-photography.html" >Editorial фотография</a></li><li class="item-188"><a href="../photography/360panorama.html" >360 панорама</a></li></ul></li><li class="item-111 active deeper  parent dropdown "><a href='../fоtоgrаfski-kurs.html' class='dropdown-toggle disabled' data-toggle='dropdown'><span class=''>Фотокурсове</span><b class="caret"></b></a><ul class="dropdown-menu"><li class="item-134 current active"><a href="fоtо-kurs-zа-nаchinаеshti.html" >Фотокурс за начинаещи</a></li><li class="item-138"><a href="fоtо-kurs-zа-nаprеdnаli.html" >Фотокурс за напреднали и любители</a></li><li class="item-169"><a href="photo-course-deca.html" >Фото курс за деца</a></li><li class="item-189"><a href="индивидуален-курс-по-фотография.html" >Индивидуален курс по фотография</a></li><li class="item-168"><a href="dslr-video-course.html" >Курс по видеозаснемане с DSLR</a></li><li class="item-167"><a href="foto-kurs-pro.html" >Професионално обучение по фотография</a></li><li class="item-150"><a href="uskoren-fоtо-kurs-v-plovdiv-za-nachinaeshti.html" >Ускорен фотокурс в Пловдив</a></li><li class="item-139"><a href="kursove-po-photoshop.html" >Курс по Photoshop в София</a></li><li class="item-170"><a href="kurs-photoshop-plovdiv.html" >Курс по Photoshop в Пловдив</a></li><li class="item-153"><a href="schedule-photo-kursove.html" >График на фотокурсовете</a></li></ul></li><li class="item-112"><a href="../fotoplener.html" >Фотопленери</a></li><li class="item-114"><a href="../teambuilding.html" >Тиймбилдинг</a></li><li class="item-113"><a href="../blog.html" target="_blank" >Блог</a></li><li class="item-148"><a href="../workshops.html" >Събития</a></li><li class="item-151"><a href="../multimedia.html" >Мултимедия</a></li></ul>
+<li class="item-101"><a href="../index.html" >Фото курс</a></li><li class="item-110 deeper  parent dropdown "><a href='../photography.html' class='dropdown-toggle disabled' data-toggle='dropdown'><span class=''>Фотография</span><b class="caret"></b></a><ul class="dropdown-menu"><li class="item-121"><a href="../photography/corporativna-fotografia.html" >Корпоративна фотография</a></li><li class="item-122"><a href="../photography/produktova-fotografia.html" >Продуктова фотография</a></li><li class="item-123"><a href="../photography/reklamna-fotografia.html" >Рекламна фотография</a></li><li class="item-152"><a href="../photography/editorial-photography.html" >Editorial фотография</a></li><li class="item-188"><a href="../photography/360panorama.html" >360 панорама</a></li></ul></li><li class="item-111 active deeper  parent dropdown "><a href='../fоtоgrаfski-kurs.html' class='dropdown-toggle disabled' data-toggle='dropdown'><span class=''>Фотокурсове</span><b class="caret"></b></a><ul class="dropdown-menu"><li class="item-134 current active"><a href="fоtо-kurs-zа-nаchinаеshti.html" >Фотокурс за начинаещи</a></li><li class="item-138"><a href="fоtо-kurs-zа-nаprеdnаli.html" >Фотокурс за напреднали и любители</a></li><li class="item-169"><a href="photo-course-deca.html" >Фото курс за деца</a></li><li class="item-189"><a href="индивидуален-курс-по-фотография.html" >Индивидуален курс по фотография</a></li><li class="item-168"><a href="dslr-video-course.html" >Курс по видеозаснемане с DSLR</a></li><li class="item-167"><a href="foto-kurs-pro.html" >Професионално обучение по фотография</a></li><li class="item-150"><a href="uskoren-fоtо-kurs-v-plovdiv-za-nachinaeshti.html" >Ускорен фотокурс в Пловдив</a></li><li class="item-139"><a href="kursove-po-photoshop.html" >Курс по Photoshop в София</a></li><li class="item-170"><a href="kurs-photoshop-plovdiv.html" >Курс по Photoshop в Пловдив</a></li><li class="item-153"><a href="schedule-photo-kursove.html" >График на фотокурсовете</a></li></ul></li><li class="item-112"><a href="../fotoplener.html" >Фотопленери</a></li><li class="item-114"><a href="../teambuilding.html" >Тиймбилдинг</a></li><li class="item-148"><a href="../workshops.html" >Събития</a></li><li class="item-151"><a href="../multimedia.html" >Мултимедия</a></li></ul>
 
 								</div>
 							</div>
@@ -155,16 +304,106 @@ jQuery.noConflict();
 		КУРС ПО ФОТОГРАФИЯ ЗА НАЧИНАЕЩИ СОФИЯ</a>
 		</h2>
 
+<div style='clear:both'></div><!-- ======================= Content starts here -->
 
+<div class="gmail_default"><span style="line-height: 1.3em;"> </span></div>
+<div style="background: #f9f9f9; padding: 25px; border-radius: 8px; border-left: 4px solid #A5BD33; margin: 25px 0;">
+<div class="gmail_default">
+<h3 style="color: #A5BD33; margin-top: 0;">Фотокурс за Начинаещи - Ключови Предимства</h3>
+<p><strong style="color: #A5BD33; font-size: 20px;">✓ 35 астрономически часа изцяло <em>практическа</em> фотография</strong></p>
+<p><strong style="color: #A5BD33; font-size: 20px;">✓ Обучение в продължение на 6 седмици</strong></p>
+<p><strong style="color: #A5BD33; font-size: 20px;">✓ Предимно събота и неделя - удобно за работещи хора</strong></p>
+<p><strong style="color: #A5BD33; font-size: 20px;">✓ Малки групи за индивидуално внимание</strong></p>
+</div>
+<p style="margin-top: 20px;"><strong><a href="schedule-photo-kursove/50/event_details.html" style="display: inline-block; background: #A5BD33 !important; color: #ffffff !important; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-size: 18px;">➜ График, Цени и Записване</a></strong></p>
+</div>
 
+<div style="margin: 30px 0;">
+<h3>Защо да изберете нашия фотографски курс за начинаещи?</h3>
+<p><strong>Фотографските курсове на Great Photo Art са изцяло практически</strong> - 90% от времето е посветено на реални упражнения и снимане. Това е първото от най-големите предимства на нашето обучение.</p>
+<p><strong>Уроците се провеждат предимно събота и неделя</strong>, което е идеално за хора, които работят през седмицата. Това е второто голямо предимство - можете да се обучавате без да жертвате работното си време.</p>
+<p>Но предимствата не спират дотук - нашите курсисти получават достъп до професионално студио, оборудване от висок клас, опитни преподаватели и много практически знания, които могат да приложат веднага.</p>
+</div>
+<p><span><strong><span style="color: #99cc00;"><span> </span></span></strong></span></p>
+<div class="gmail_default"><span><strong>ВРЕМЕТО Е ЦЕННО, ЗАТОВА ЕТО КАК ЩЕ ГО ОПОЛЗОТВОРИТЕ ПРИ НАС:</strong></span></div>
+<p>Уроците са с продължителност 4 астрономически часа. Изключение прави урокът по пейзажна фотография, който е по дълъг и се провежда извън града.</p>
+<p><strong>Уроците, които провеждаме събота и неделя от 10:00 ч изключение може да правят уроците по нощна фотография.</strong></p>
+<p> </p>
+<p><strong>Техника: </strong>най-добре е да посещавате курса по фотография със собствен фотоапарат, независимо каква марка и модел е. Любителски фотоапарат също върши работа. Важно е да има ръчни настройки.</p>
+<p>Great Photo Art си партнира успешно с <strong><a href="http://www.olympus.bg/" target="_blank">Olympus България </a></strong>и<strong> <a href="http://www.canon.bg/">Canon Балгария</a>.</strong> За участниците в курса, които не разполагат с никакъв фотоапарат <strong><a href="http://www.olympus.bg/" target="_blank">Olympus България</a> </strong>и <strong><a href="http://www.canon.bg/">Канон Балгария</a> </strong>предоставя учебни фотоапарати и обективи. Те се предоставят само за целите на курса, не могат да се ползват вкъщи. Фотоапаратите са ограничен брой и се ползват след предварителна заявка.</p>
+<p> </p>
+<div class="gmail_default">Което ще изучавате в курса:</div>
+<div class="gmail_default"> </div>
+<div class="gmail_default">- Развитието на фотоапаратът(телефонът) и как да боравите с него.</div>
+<div class="gmail_default">- Механизмите за използването на максимума от фотоапарата.</div>
+<div class="gmail_default">- Настройка на фотоапарата - как да правим снимки без допълнително обработване.</div>
+<div class="gmail_default">- Композиция в изобразителното изкуство.</div>
+<div class="gmail_default">- Портрет на човек - работа със светлина.</div>
+<div class="gmail_default">- Пейзажна фотография - подходящи настройки за различните видове време.</div>
+<div class="gmail_default">- Нощна фотография - хитри трикове за ефектни кадри.</div>
+<div class="gmail_default">- Разполагане на елементите в кадъра - как се манипулират чувства със снимките.</div>
+<div class="gmail_default">- Репортаж - как да разкажем историята си в снимки.</div>
+<p> </p>
+<p> </p>
+<p>Теоретичните уроци се провеждат студиото в София на  Бул. "Васил Левски" 57.</p>
+<p> </p>
+<p>Посетете секция<strong> <a href="../multimedia.html">Мултимедия</a></strong>, за да видите видео клипове от нашите уроци, фотопленери, работилници, изложби, събития...</p>
+<p><strong>Основен преподавател:</strong> <a href="../ekip.html" target="_blank">Петър Чолаков</a></p>
+<div style="background: #A5BD33; color: white; padding: 30px; border-radius: 8px; margin: 30px 0; text-align: center;">
+<h3 style="color: white; font-size: 28px; margin-top: 0;">🎓 Готови сте да започнете?</h3>
+<p style="font-size: 19px; margin: 20px 0;">Ще се радваме да станете част от нашата фотографска общност!</p>
+<div style="margin: 25px 0;">
+<a href="schedule-photo-kursove/50/event_details.html" style="display: inline-block; background: white; color: #A5BD33; padding: 15px 40px; border-radius: 5px; text-decoration: none; font-size: 20px; font-weight: bold; margin: 10px;">
+📅 Виж График и Цени
+</a>
+</div>
+</div>
 
+<div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 30px 0;">
+<h3 style="color: #464646; text-align: center;">Научете повече като ни се обадите на +359 884 779 121!</h3>
 
-
-
-
-
-<div class="grafic-button"><strong><a href="schedule-photo-kursove.html#.UXKm_rU72Ag">ГРАФИК</a></strong></div>
 <p><div style='clear:both'></div><!-- ======================= Admiror Gallery -->
+<style type="text/css">
+     .AG_classic .ag_imageThumb{border-color:#808080}
+     .AG_classic .ag_imageThumb:hover{background-color:#a5bd33}
+</style>
+<div id="AG_11" class="AG_caruBig">
+  <table cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+	<td>
+		<div class="image_carousel">
+			<div class="foo2"><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_16.jpg" title="FKurs_Nchin_16.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_16.jpg" alt="FKurs_Nchin_16.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_02.jpg" title="FKurs_Nchin_02.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_02.jpg" alt="FKurs_Nchin_02.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/Foto_Kurs_Nchin_11.jpg" title="Foto_Kurs_Nchin_11.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/Foto_Kurs_Nchin_11.jpg" alt="Foto_Kurs_Nchin_11.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_17.jpg" title="FKurs_Nchin_17.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_17.jpg" alt="FKurs_Nchin_17.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/Foto_Kurs_Nchinaeshti_03.jpg" title="Foto_Kurs_Nchinaeshti_03.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/Foto_Kurs_Nchinaeshti_03.jpg" alt="Foto_Kurs_Nchinaeshti_03.jpg" class="ag_imageThumb"></a></span>
+			</div>
+			<div class="clearfix"></div>
+			<!-- <a class="foo2_prev prev" href="#"><span>prev</span></a> <a class="foo2_next next" href="#"><span>next</span></a>
+			<div class="pagination foo2_pag"></div> -->
+		</div>
+		
+		<script>
+		( function($) { 	
+			$(".foo2").carouFredSel({
+				circular: true,
+				infinite: true,
+				auto 	: false
+			});
+		 })( jQuery );
+		 
+</script>
+		
+	</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+        AG_jQuery("a[rel=fancybox[AdmirorGallery11]]").fancybox({
+		 'transitionIn' : 'elastic',
+		 'transitionOut' : 'elastic',
+		 'easingIn' : 'easeOutBack',
+		 'easingOut' : 'easeInBack'
+        });
 <style type="text/css">
      .AG_classic .ag_imageThumb{border-color:#808080}
      .AG_classic .ag_imageThumb:hover{background-color:#a5bd33}
@@ -208,106 +447,6 @@ jQuery.noConflict();
         });
 </script>
 </p>
-<div class="gmail_default"><span style="line-height: 1.3em;"> </span></div>
-<div class="gmail_default"><strong style="color: #99cc00; font-size: 12.16px;">35 астрономически часа изцяло <em>практическа</em> фотография </strong></div>
-<div class="gmail_default">
-<p><span style="color: #99cc00;"><strong>в 6 седмици.</strong></span></p>
-<p><br /><strong><a href="schedule-photo-kursove/50/event_details.html#.XXz8NSj7TIU">Още информация за графика на провеждане на фотографския курс, цената и други подробности вижте ТУК!</a></strong></p>
-<p><a href="schedule-photo-kursove/50/event_details.html#.XXz8NSj7TIU"><span style="font-size: 12.16px; line-height: 1.3em;"> </span></a></p>
-</div>
-<p><span><strong><span style="color: #99cc00;"> <span>Фотографските курсове на Great Photo Art са изцяло практически,  което е първото от най-хубавите им качества. Уроците се провеждат предимно събота и неделя, което пък е второто от най-хубавите им качества. А те са общо... много.</span></span></strong></span></p>
-<p><span><strong><span style="color: #99cc00;"><span> </span></span></strong></span></p>
-<div class="gmail_default"><span><strong>ВРЕМЕТО Е ЦЕННО, ЗАТОВА ЕТО КАК ЩЕ ГО ОПОЛЗОТВОРИТЕ ПРИ НАС:</strong></span></div>
-<p>Уроците са с продължителност 4 астрономически часа. Изключение прави урокът по пейзажна фотография, който е по дълъг и се провежда извън града.</p>
-<p><strong>Уроците, които провеждаме събота и неделя от 10:00 ч изключение може да правят уроците по нощна фотография.</strong></p>
-<p> </p>
-<p><strong>Техника: </strong>най-добре е да посещавате курса по фотография със собствен фотоапарат, независимо каква марка и модел е. Любителски фотоапарат също върши работа. Важно е да има ръчни настройки.</p>
-<p>Great Photo Art си партнира успешно с <strong><a href="http://www.olympus.bg/" target="_blank">Olympus България </a></strong>и<strong> <a href="http://www.canon.bg/">Canon Балгария</a>.</strong> За участниците в курса, които не разполагат с никакъв фотоапарат <strong><a href="http://www.olympus.bg/" target="_blank">Olympus България</a> </strong>и <strong><a href="http://www.canon.bg/">Канон Балгария</a> </strong>предоставя учебни фотоапарати и обективи. Те се предоставят само за целите на курса, не могат да се ползват вкъщи. Фотоапаратите са ограничен брой и се ползват след предварителна заявка.</p>
-<p> </p>
-<div class="gmail_default">Което ще изучавате в курса:</div>
-<div class="gmail_default"> </div>
-<div class="gmail_default">- Развитието на фотоапаратът(телефонът) и как да боравите с него.</div>
-<div class="gmail_default">- Механизмите за използването на максимума от фотоапарата.</div>
-<div class="gmail_default">- Настройка на фотоапарата - как да правим снимки без допълнително обработване.</div>
-<div class="gmail_default">- Композиция в изобразителното изкуство.</div>
-<div class="gmail_default">- Портрет на човек - работа със светлина.</div>
-<div class="gmail_default">- Пейзажна фотография - подходящи настройки за различните видове време.</div>
-<div class="gmail_default">- Нощна фотография - хитри трикове за ефектни кадри.</div>
-<div class="gmail_default">- Разполагане на елементите в кадъра - как се манипулират чувства със снимките.</div>
-<div class="gmail_default">- Репортаж - как да разкажем историята си в снимки.</div>
-<p> </p>
-<p> </p>
-<p>Теоретичните уроци се провеждат студиото в София на  Бул. "Васил Левски" 57.</p>
-<p> </p>
-<p>Посетете секция<strong> <a href="../multimedia.html">Мултимедия</a></strong>, за да видите видео клипове от нашите уроци, фотопленери, работилници, изложби, събития...</p>
-<p><strong>Основен преподавател:</strong> <a href="../ekip.html" target="_blank">Петър Чолаков</a></p>
-<p> </p>
-<p>Ще се радваме да станете наш ученик!</p>
-<p> </p>
-<p><strong><a href="schedule-photo-kursove/50/event_details.html#.XXz8NSj7TIU">За да се запишеш за участие в курса, ползвай бутончето горе в дясно,</a></strong></p>
-<p><strong>или като изпратите имейл за желания курс на <script type='text/javascript'>
- <!--
- var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
- var path = 'hr' + 'ef' + '=';
- var addy32513 = 'ph&#111;t&#111;' + '&#64;';
- addy32513 = addy32513 + 'gr&#101;&#97;tph&#111;t&#111;&#97;rt' + '&#46;' + 'c&#111;m';
- document.write('<a ' + path + '\'' + prefix + ':' + addy32513 + '\'>');
- document.write(addy32513);
- document.write('<\/a>');
- //-->\n </script><script type='text/javascript'>
- <!--
- document.write('<span style=\'display: none;\'>');
- //-->
- </script>Този имейл адрес е защитен от спам ботове. Трябва да имате пусната JavaScript поддръжка, за да го видите.
- <script type='text/javascript'>
- <!--
- document.write('</');
- document.write('span>');
- //-->
- </script>!</strong></p>
-<p> </p>
-<p><div style='clear:both'></div><!-- ======================= Admiror Gallery -->
-<style type="text/css">
-     .AG_classic .ag_imageThumb{border-color:#808080}
-     .AG_classic .ag_imageThumb:hover{background-color:#a5bd33}
-</style>
-<div id="AG_11" class="AG_caruBig">
-  <table cellspacing="0" cellpadding="0">
-    <tbody>
-      <tr>
-	<td>
-		<div class="image_carousel">
-			<div class="foo2"><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_16.jpg" title="FKurs_Nchin_16.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_16.jpg" alt="FKurs_Nchin_16.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_02.jpg" title="FKurs_Nchin_02.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_02.jpg" alt="FKurs_Nchin_02.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/Foto_Kurs_Nchin_11.jpg" title="Foto_Kurs_Nchin_11.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/Foto_Kurs_Nchin_11.jpg" alt="Foto_Kurs_Nchin_11.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/FKurs_Nchin_17.jpg" title="FKurs_Nchin_17.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/FKurs_Nchin_17.jpg" alt="FKurs_Nchin_17.jpg" class="ag_imageThumb"></a></span><span class="ag_thumbcaruBig"><a href="https://greatphotoart.com/images/Nachinaeshti_02/Foto_Kurs_Nchinaeshti_03.jpg" title="Foto_Kurs_Nchinaeshti_03.jpg" class="" rel="fancybox[AdmirorGallery11]"  target="_blank"><img src="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/thumbs/Nachinaeshti_02/Foto_Kurs_Nchinaeshti_03.jpg" alt="Foto_Kurs_Nchinaeshti_03.jpg" class="ag_imageThumb"></a></span>
-			</div>
-			<div class="clearfix"></div>
-			<!-- <a class="foo2_prev prev" href="#"><span>prev</span></a> <a class="foo2_next next" href="#"><span>next</span></a>
-			<div class="pagination foo2_pag"></div> -->
-		</div>
-		
-		<script>
-		( function($) { 	
-			$(".foo2").carouFredSel({
-				circular: true,
-				infinite: true,
-				auto 	: false
-			});
-		 })( jQuery );
-		 
-</script>
-		
-	</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<script type="text/javascript" charset="utf-8">
-        AG_jQuery("a[rel=fancybox[AdmirorGallery11]]").fancybox({
-		 'transitionIn' : 'elastic',
-		 'transitionOut' : 'elastic',
-		 'easingIn' : 'easeOutBack',
-		 'easingOut' : 'easeInBack'
-        });
 </script>
 </span></p>
 <p><span style="color: #99cc00;"><strong><span style="line-height: 1.3em;"> </span></strong></span></p>
@@ -375,7 +514,6 @@ jQuery.noConflict();
 <li style="background: #A5BD33; margin: 0 1.3% 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="fоtо-kurs-zа-nаchinаеshti.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Фотокурс за начинаещи</a></li>
 <li style="background: #464646; margin: 0 1.3% 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="fоtо-kurs-zа-nаprеdnаli.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Фотокурс за напреднали</a></li>
 <li style="background: #A5BD33; margin: 0 1.3% 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="kursove-po-photoshop.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Фотокурс по Photoshop</a></li>
-<li style="background: #464646; margin: 0 0 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="https://greatphotoart.com/f%D0%BEt%D0%BEgr%D0%B0fski-kurs/kurs-lightroom" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Курс по Lightroom</a></li>
 <li style="background: #464646; margin: 0 1.3% 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="photo-course-deca.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Фото курс за деца</a></li>
 <li style="background: #A5BD33; margin: 0 1.3% 10px 0; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="uskoren-fоtо-kurs-v-plovdiv-za-nachinaeshti.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Ускорен фотокурс в Пловдив</a></li>
 <li style="background: #464646; margin: 0 1.3% 10px 0; line-height: 20px; float: left; display: inline-block; width: 24%; height: 50px; text-align: center; vertical-align: middle; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;"><a href="../photography/reklamna-fotografia.html" style="font-size: 1em; color: #ffffff; height: 100%; width: 100%; display: block; padding: 10px 3px;">Рекламна фотография</a></li>
@@ -395,7 +533,7 @@ jQuery.noConflict();
 <div class="newsflash">
 	
 	<h5 class="newsflash-title">
-			<a href="../contancts.html">
+			<a href="../contacts.html">
 			Контакти</a>
 		</h5>
 
@@ -436,7 +574,6 @@ jQuery.noConflict();
 
 	
 	<h5 class="newsflash-title">
-			<a href="../copy.html">
 		</h5>
 
 
