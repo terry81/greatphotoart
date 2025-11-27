@@ -3,10 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="theme-color" content="#A5BD33" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="author" content="Administrator" />
-  <meta name="description" content="Петър Чолаков е един от най-добрите фотографи, който се занимават със снимане на събития в България. Занимават се с репортажна, документална, социална фотография, editorial фотография." /><title>Editorial фотография - Great Photo Art</title>
+  <meta name="description" content="Професионална editorial фотография в България. Репортажни, документални и социални фотосесии за медии, списания и корпоративни клиенти. ☎ +359 879 660 690" />
+  <meta name="keywords" content="editorial фотография, репортажна фотография, документална фотография, социална фотография, фотограф за събития България, фотожурналистика" />
+  <meta name="author" content="Great Photo Art" />
+  <title>Editorial Фотография България | Репортажна и Документална Фотография | Great Photo Art</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greatphotoart.com/photography/editorial-photography.html" />
+  <meta property="og:title" content="Editorial Фотография България | Great Photo Art" />
+  <meta property="og:description" content="Професионална editorial, репортажна и документална фотография за медии и бизнес." />
+  <meta property="og:image" content="https://greatphotoart.com/images/logo.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://greatphotoart.com/photography/editorial-photography.html" />
   <link href="https://greatphotoart.com/templates/js_wright/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <link rel="stylesheet" href="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/AdmirorGallery.css" type="text/css" />
   <link rel="stylesheet" href="https://greatphotoart.com/plugins/content/admirorgallery/admirorgallery/templates/caruBig/template.css" type="text/css" />
@@ -96,6 +108,37 @@ jQuery.noConflict();
 </script>
 <!-- Universal Google Analytics Plugin by PB Web Development -->
 
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Editorial Фотография",
+  "provider": {
+    "@type": "Organization",
+    "name": "Great Photo Art",
+    "url": "https://greatphotoart.com",
+    "logo": "https://greatphotoart.com/images/logo.png",
+    "telephone": "+359879660690",
+    "email": "photo@greatphotoart.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "София",
+      "addressCountry": "BG"
+    }
+  },
+  "description": "Професионална editorial, репортажна и документална фотография за медии, списания и корпоративни клиенти в България.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "България"
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
 </head>
 <body class="is_unknown v_unknown b_jdefault h_jdefault id_152 rev_3.0.18">
         <div class="container">
@@ -149,26 +192,344 @@ jQuery.noConflict();
                             	            	
             	
 <div id="system-message-container">
-</div><div class="item-page">
+<div class="item-page">
 
-	<h2>
-			<a href="editorial-photography.html">
-		Editorial фотография</a>
-		</h2>
+<style>
+.editorial-hero {
+    background: linear-gradient(135deg, #464646 0%, #2a2a2a 100%);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30px 0;
+}
+.editorial-hero h1 {
+    color: white;
+    font-size: 42px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+.editorial-hero p {
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+.service-box {
+    background: white;
+    border: 2px solid #A5BD33;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(165,189,51,0.3);
+    background: #f9f9f9;
+}
+.service-box h3 {
+    color: #464646;
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+}
+.service-icon {
+    font-size: 40px;
+    color: #A5BD33;
+}
+.intro-section {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 30px 0;
+    border-left: 5px solid #A5BD33;
+}
+.intro-section h2 {
+    color: #464646;
+    font-size: 32px;
+    margin-top: 0;
+}
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #464646;
+    margin: 15px 0;
+}
+.clients-section {
+    background: linear-gradient(to right, #A5BD33 0%, #8fa329 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+.clients-section h2 {
+    color: white;
+    font-size: 28px;
+    margin-top: 0;
+}
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+.client-badge {
+    background: white;
+    color: #464646;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.cta-section {
+    background: white;
+    border: 3px solid #A5BD33;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+.cta-button {
+    display: inline-block;
+    background: #A5BD33;
+    color: white;
+    padding: 18px 45px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 20px 10px 0 10px;
+}
+.cta-button:hover {
+    background: #8fa329;
+    transform: scale(1.05);
+    color: white;
+}
+.cta-button.secondary {
+    background: #464646;
+}
+.cta-button.secondary:hover {
+    background: #2a2a2a;
+}
+.portfolio-section {
+    margin: 50px 0;
+}
+.portfolio-section h2 {
+    color: #464646;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.portfolio-section h3 {
+    color: #A5BD33;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+}
+/* Make portfolio images bigger and disable carousel */
+.portfolio-section .ag_imageThumb {
+    width: 200px !important;
+    height: auto !important;
+    max-width: 100%;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+}
+.portfolio-section .ag_thumbcaruBig {
+    display: inline-block !important;
+    margin: 10px !important;
+    visibility: visible !important;
+    position: relative !important;
+    left: auto !important;
+    float: none !important;
+}
+.portfolio-section .image_carousel {
+    text-align: center;
+    overflow: visible !important;
+    height: auto !important;
+}
+.portfolio-section .foo2 {
+    display: block !important;
+    width: auto !important;
+    text-align: center;
+    overflow: visible !important;
+    height: auto !important;
+    position: relative !important;
+}
+.portfolio-section .AG_caruBig {
+    overflow: visible !important;
+}
+.portfolio-section table {
+    width: 100% !important;
+}
+/* Override carousel positioning */
+.portfolio-section .foo2 > * {
+    position: relative !important;
+    left: auto !important;
+    display: inline-block !important;
+}
+</style>
 
+<script>
+// Disable carousel in portfolio section and show all images
+jQuery(document).ready(function($) {
+    // Wait a bit for carousel to initialize, then override it
+    setTimeout(function() {
+        $('.portfolio-section .foo2').each(function() {
+            // Reset inline styles added by carousel
+            $(this).attr('style', '');
+            $(this).children().each(function() {
+                $(this).attr('style', '');
+                $(this).css({
+                    'display': 'inline-block',
+                    'position': 'relative',
+                    'left': 'auto',
+                    'visibility': 'visible',
+                    'opacity': '1'
+                });
+            });
+        });
+    }, 100);
+});
+</script>
 
+<style>
+@media (max-width: 768px) {
+    background: white;
+    border: 2px solid #464646;
+    border-radius: 8px;
+    padding: 35px;
+    margin: 30px 0;
+}
+.benefits-list h2 {
+    color: #464646;
+    font-size: 28px;
+    margin-top: 0;
+}
+.benefits-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.benefits-list li {
+    font-size: 18px;
+    line-height: 2;
+    color: #464646;
+    padding: 12px 0 12px 35px;
+    position: relative;
+}
+.benefits-list li:before {
+    content: "📸";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .editorial-hero h1 {
+        font-size: 32px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .clients-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-button {
+        display: block;
+        margin: 10px 0;
+    }
+}
+</style>
 
+<!-- Hero Section -->
+<div class="editorial-hero">
+    <h1>📰 Editorial Фотография</h1>
+    <p>Професионални фотоуслуги за медии, списания и корпоративни събития</p>
+</div>
 
+<!-- Intro Section -->
+<div class="intro-section">
+    <h2>Разказваме истории чрез снимки</h2>
+    <p>Фотографите на <strong>Great Photo Art</strong> са специализирани в създаването на <strong>editorial фотография</strong> – заснемаме не просто моменти, а създаваме художествени разкази от събития. Всяка снимка е пълна със символика, емоция и послание, което достига директно до аудиторията.</p>
+    <p>С богат опит в <strong>репортажната, документалната и социалната фотография</strong>, ние предлагаме пълен спектър от фотографски услуги за медии, списания, корпоративни клиенти и обществени организации.</p>
+</div>
 
+<!-- Services Grid -->
+<div class="services-grid">
+    <div class="service-box">
+        <div class="service-icon">📰</div>
+        <h3>Репортажна Фотография</h3>
+        <p>Професионално покритие на събития и новини</p>
+    </div>
+    <div class="service-box">
+        <div class="service-icon">📚</div>
+        <h3>Документална Фотография</h3>
+        <p>Автентични истории и социални теми</p>
+    </div>
+    <div class="service-box">
+        <div class="service-icon">🎯</div>
+        <h3>Корпоративни Събития</h3>
+        <p>Заснемане на конференции и презентации</p>
+    </div>
+    <div class="service-box">
+        <div class="service-icon">🎨</div>
+        <h3>Художествена Фотография</h3>
+        <p>Креативни и концептуални проекти</p>
+    </div>
+</div>
 
+<!-- Clients Section -->
+<div class="clients-section">
+    <h2>Доверили са ни се водещи марки</h2>
+    <div class="clients-list">
+        <div class="client-badge">Coca Cola</div>
+        <div class="client-badge">BMW</div>
+        <div class="client-badge">Carlsberg</div>
+        <div class="client-badge">РВД</div>
+        <div class="client-badge">Gossip Studio</div>
+    </div>
+</div>
 
+<!-- Benefits Section -->
+<div class="benefits-list">
+    <h2>Защо да изберете нас?</h2>
+    <ul>
+        <li>Опит с водещи национални и международни марки</li>
+        <li>Професионално покритие на събития в реално време</li>
+        <li>Художествен подход и внимание към детайла</li>
+        <li>Бърза обработка и доставка на материали</li>
+        <li>Пълни авторски права и лицензи</li>
+        <li>Фотографи с журналистически опит и чувство за момента</li>
+        <li>Модерна техника и backup оборудване</li>
+    </ul>
+</div>
 
+<!-- CTA Section -->
+<div class="cta-section">
+    <h2 style="color: #464646; font-size: 32px; margin-top: 0;">Нуждаете се от професионален фотограф?</h2>
+    <p style="font-size: 18px; margin: 20px 0; color: #464646;">Свържете се с нас за консултация и оферта</p>
+    <a href="../photo-offer.html" class="cta-button">📧 Поискай Оферта</a>
+    <a href="tel:+359879660690" class="cta-button secondary">📞 +359 879 660 690</a>
+</div>
 
-<div class="grafic-button"><a href="../photo-offer.html">Поискай оферта</a></div>
-<p> </p>
-<p>Фотографите на Great Photo Art са едни от най-талантливите в заснемането на големи събития. Те заснемат не просто моменти, а създават художествена фотография от събитията. Снимките им са пълни със символика и послания. Доказателство за това са корпоративните клиенти, които са ни се доверявали досега. Сред тях са <strong>Coca Cola, BMW, Carlsberg, Ръководство на въздушното движение, Gossip Studio...</strong></p>
-<p><strong>Вижте част от нашето портфолио:</strong></p>
-<p><strong>Sprite Graffiti Fest 2012</strong></p>
+<!-- Portfolio Section -->
+<div class="portfolio-section">
+    <h2>📂 Портфолио от Наши Проекти</h2>
+    <h3>Sprite Graffiti Fest 2012</h3>
 <p><div style='clear:both'></div><!-- ======================= Admiror Gallery -->
 <style type="text/css">
      .AG_classic .ag_imageThumb{border-color:#808080}
@@ -438,7 +799,77 @@ jQuery.noConflict();
 
             <span class="ag_hidden_ID" id="1"></span>
 
-            
+
+<!-- SEO Content Section -->
+<div class="intro-section" style="margin-top: 50px;">
+    <h2>Editorial фотография в България - професионални услуги от Great Photo Art</h2>
+    <p><strong>Editorial фотографията</strong> е специализирана област на фотографията, която се фокусира върху разказването на истории чрез визуални средства. В <strong>Great Photo Art</strong> разбираме колко важно е да уловим не просто моменти, а да създадем цялостни визуални разкази, които предават емоции, послания и атмосфера на събитията.</p>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Какво е editorial фотография?</h3>
+    <p><strong>Editorial фотографията</strong> се използва в медиите, списанията, онлайн публикациите и корпоративните материали за илюстриране на статии, репортажи и истории. За разлика от рекламната фотография, editorial снимките имат по-документален и автентичен характер, като целят да информират и да разказват истории.</p>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Нашите услуги в editorial фотографията:</h3>
+    <ul style="line-height: 2; font-size: 17px;">
+        <li><strong>Репортажна фотография</strong> - покритие на новинарски събития, пресконференции, протести</li>
+        <li><strong>Документална фотография</strong> - дългосрочни проекти за документиране на социални теми</li>
+        <li><strong>Корпоративна фотожурналистика</strong> - заснемане на корпоративни събития и активности</li>
+        <li><strong>Спортна фотография</strong> - динамични снимки от спортни състезания</li>
+        <li><strong>Културни събития</strong> - фестивали, концерти, изложби, театрални представления</li>
+        <li><strong>Социална фотография</strong> - проекти с обществена значимост</li>
+    </ul>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Нашият подход към editorial фотографията</h3>
+    <p>В Great Photo Art вярваме, че добрата editorial фотография изисква не просто технически умения, но и:</p>
+    <ul style="line-height: 2; font-size: 17px;">
+        <li><strong>Журналистически усет</strong> - умението да разпознаеш ключовия момент</li>
+        <li><strong>Художествено виждане</strong> - създаване на естетически силни композиции</li>
+        <li><strong>Етични стандарти</strong> - автентичност и уважение към субектите</li>
+        <li><strong>Бързина и прецизност</strong> - работа в динамична среда с ограничено време</li>
+        <li><strong>Разказвателски умения</strong> - способността да разказваш истории чрез серии от снимки</li>
+    </ul>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">За кого са нашите услуги?</h3>
+    <p>Работим с различни видове клиенти, включително:</p>
+    <ul style="line-height: 2; font-size: 17px;">
+        <li>Медийни издания и онлайн публикации</li>
+        <li>Корпоративни клиенти за вътрешни и външни комуникации</li>
+        <li>НПО организации за документиране на проекти</li>
+        <li>Рекламни агенции за креативни кампании</li>
+        <li>Организатори на събития и фестивали</li>
+        <li>Книжни издателства за илюстриране на публикации</li>
+    </ul>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Процес на работа</h3>
+    <ol style="line-height: 2; font-size: 17px;">
+        <li><strong>Предварителна консултация</strong> - обсъждаме целите, концепцията и изискванията</li>
+        <li><strong>Планиране</strong> - подготовка на оборудване и координация на детайли</li>
+        <li><strong>Заснемане</strong> - професионално покритие на събитието</li>
+        <li><strong>Селекция</strong> - избор на най-силните снимки от материала</li>
+        <li><strong>Обработка</strong> - фино настройване на цветове, експозиция и кадриране</li>
+        <li><strong>Доставка</strong> - предаване на готовите материали в желания формат и резолюция</li>
+    </ol>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Нашият опит</h3>
+    <p>Фотографите на Great Photo Art имат богат опит в заснемането на разнообразни проекти за водещи български и международни марки. Сред нашите клиенти са <strong>Coca Cola, BMW, Carlsberg, Ръководство на въздушното движение</strong> и много други. Всеки проект се подхожда индивидуално с цел създаване на уникални визуални истории.</p>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Авторски права и лицензиране</h3>
+    <p>При editorial фотография авторските права са изключително важни. Ние предлагаме прозрачни условия за лицензиране на материалите според нуждите на всеки клиент - от еднократно използване до пълни авторски права.</p>
+
+    <h3 style="color: #464646; font-size: 24px; margin-top: 30px;">Защо да изберете Great Photo Art?</h3>
+    <p>С години опит в <strong>репортажната, документалната и editorial фотографията</strong>, ние предлагаме:</p>
+    <ul style="line-height: 2; font-size: 17px;">
+        <li>Професионализъм и надеждност</li>
+        <li>Креативен подход и уникална визия</li>
+        <li>Модерна техника и backup оборудване</li>
+        <li>Бърза доставка на материали</li>
+        <li>Гъвкави ценови пакети</li>
+        <li>Дългогодишен опит с водещи марки</li>
+    </ul>
+
+    <p style="margin-top: 30px;"><strong>Свържете се с нас</strong> за консултация и оферта за вашия проект. Телефон: <a href="tel:+359879660690" style="color: #A5BD33; font-weight: bold;">+359 879 660 690</a> | Email: <a href="mailto:photo@greatphotoart.com" style="color: #A5BD33; font-weight: bold;">photo@greatphotoart.com</a></p>
+</div>
+
+
 <div style="display:block; font-size:10px; overflow:hidden; height:1px; padding-top:1px;"><br /><a href="http://www.admiror-design-studio.com/en/joomla-extensions" target="_blank">AdmirorGallery 4.5.0</a>, author/s <a href="http://www.vasiljevski.com/" target="_blank">Vasiljevski</a> & <a href="http://www.admiror-design-studio.com" target="_blank">Kekeljevic</a>.<br /></div>
 	
 </div>
@@ -518,13 +949,6 @@ jQuery.noConflict();
 	
 	<h5 class="newsflash-title">
 		</h5>
-
-
-
-
-<div style="font-size: 10px;">
-<p><em>Copyright © 2013 <strong>Great Photo Art,</strong> Всички права запазени.</em><br /><em> Забранява се копирането и разпространението на снимки и текстове от този сайт.</em></p>
-</div>
 </div>
 </div>
 <div class="module mod_2 no_title span4">
