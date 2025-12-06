@@ -2,8 +2,8 @@ module.exports = function(eleventyConfig) {
   // Copy static assets directly to output
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("media");
-  eleventyConfig.addPassthroughCopy("plugins");
+  // eleventyConfig.addPassthroughCopy("media"); // Removed - old Joomla files, not used
+  // eleventyConfig.addPassthroughCopy("plugins"); // Removed - old Admiror Gallery, not used (files missing)
   eleventyConfig.addPassthroughCopy("templates");
   eleventyConfig.addPassthroughCopy("CNAME");
 
