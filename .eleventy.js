@@ -8,6 +8,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
+  // Redirects for old Joomla URLs (GitHub Pages doesn't support .htaccess)
+  eleventyConfig.addPassthroughCopy({
+    "fоtоgrаfski-kurs-redirect.html": "fоtоgrаfski-kurs/schedule-photo-kursove/40/event_details.html",
+    "redirect-nachinaeshti.html": "fоtоgrаfski-kurs/fоtо-kurs-zа-nаchinаеshti.html",
+    "redirect-naprednali.html": "fоtоgrаfski-kurs/fоtо-kurs-zа-nаprеdnаli.html",
+    "redirect-deca.html": "fоtоgrаfski-kurs/photo-course-deca.html",
+    "redirect-individualen.html": "fоtоgrаfski-kurs/individualen-foto-kurs.html",
+    "redirect-video.html": "fоtоgrаfski-kurs/dslr-video-course.html",
+    "redirect-schedule.html": "fоtоgrаfski-kurs/schedule-photo-kursove.html"
+  });
   // Note: .htaccess doesn't work on GitHub Pages (uses their own config)
 
   // Don't process these as templates
