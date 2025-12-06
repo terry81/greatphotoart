@@ -1,0 +1,67 @@
+---
+layout: base
+title: Страницата не е намерена (404) | Great Photo Art
+description: Търсената от вас страница не съществува. Ще бъдете пренасочени към началната страница.
+keywords: 404, страница не е намерена
+pathPrefix: ./
+permalink: 404.html
+---
+
+<div class="item-page" style="text-align: center; padding: 60px 20px;">
+	<h1 style="font-size: 72px; color: #A5BD33; margin-bottom: 20px;">404</h1>
+	<h2 style="margin-bottom: 30px;">Страницата не е намерена</h2>
+
+	<p style="font-size: 18px; line-height: 1.8; max-width: 600px; margin: 0 auto 40px;">
+		За съжаление, търсената от вас страница не съществува или е била преместена.
+	</p>
+
+	<div style="margin: 40px 0;">
+		<p style="font-size: 16px; color: #666;">Ще бъдете автоматично пренасочени към началната страница след <span id="countdown">5</span> секунди...</p>
+	</div>
+
+	<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+		<div class="grafic-button">
+			<a href="index.html">Начална страница</a>
+		</div>
+		<div class="grafic-button">
+			<a href="foto-kursove.html">Курсове по фотография</a>
+		</div>
+		<div class="grafic-button">
+			<a href="photography.html">Фотографски услуги</a>
+		</div>
+		<div class="grafic-button">
+			<a href="contacts.html">Контакти</a>
+		</div>
+	</div>
+
+	<script>
+		var count = 5;
+		var countdown = setInterval(function() {
+			count--;
+			document.getElementById('countdown').textContent = count;
+			if (count <= 0) {
+				clearInterval(countdown);
+				window.location.href = '/';
+			}
+		}, 1000);
+	</script>
+
+	<div style="margin-top: 60px; padding: 30px; background: #f9f9f9; border-radius: 8px;">
+		<h3 style="color: #464646; margin-top: 0;">Може би търсите:</h3>
+		<ul style="list-style: none; padding: 0; line-height: 2;">
+			<li>📸 <a href="foto-kursove/kurs-za-nachinaeshti.html">Курс по фотография за начинаещи</a></li>
+			<li>📸 <a href="foto-kursove/kurs-za-naprednali.html">Курс по фотография за напреднали</a></li>
+			<li>📸 <a href="foto-kursove/kurs-za-deca.html">Курс по фотография за деца</a></li>
+			<li>📸 <a href="photography/produktova-fotografia.html">Продуктова фотография</a></li>
+			<li>📸 <a href="photography/reklamna-fotografia.html">Рекламна фотография</a></li>
+			<li>📸 <a href="ekip.html">За нас - Екип</a></li>
+		</ul>
+	</div>
+
+	<div style="margin-top: 40px;">
+		<p style="font-size: 16px;">
+			Ако смятате, че това е грешка, моля <a href="contacts.html" style="color: #A5BD33; font-weight: bold;">свържете се с нас</a>.
+		</p>
+	</div>
+</div>
+

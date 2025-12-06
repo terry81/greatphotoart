@@ -6,6 +6,9 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("plugins"); // Removed - old Admiror Gallery, not used (files missing)
   eleventyConfig.addPassthroughCopy("templates");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("sitemap.xml");
+  // Note: .htaccess doesn't work on GitHub Pages (uses their own config)
 
   // Don't process these as templates
   eleventyConfig.ignores.add("node_modules");
