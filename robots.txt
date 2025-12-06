@@ -1,0 +1,16 @@
+# Robots.txt for Great Photo Art
+# Updated: December 2024
+
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all content
+Disallow: /cdn-cgi/
+Disallow: /_site/
+
+# Sitemap location
+Sitemap: https://greatphotoart.com/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
