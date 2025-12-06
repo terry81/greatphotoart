@@ -49,6 +49,19 @@ venv/
 .env.*
 .python-version
 
+# =============================
+# Eleventy / 11ty
+# =============================
+# Build output
+_site/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Cache
+.cache/
+
 # Node / frontend (if added later)
 node_modules/
 dist/

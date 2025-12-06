@@ -1,0 +1,17 @@
+{
+  "name": "greatphotoart-site",
+  "version": "1.0.0",
+  "description": "Great Photo Art Website - Static Site with 11ty",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": ["photography", "courses", "bulgaria"],
+  "author": "Great Photo Art",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
+

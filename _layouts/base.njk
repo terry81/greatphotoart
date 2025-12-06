@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bg">
+{% include "head.njk" %}
+<body class="contentpane">
+  <div class="body-bg">
+    <div id="page" class="container">
+      {% include "header.njk" %}
+      {% include "navigation.njk" %}
+
+      <div id="main-content" class="row">
+        <section class="span12" id="main">
+          <div id="system-message-container"></div>
+          {{ content | safe }}
+        </section>
+      </div>
+
+      {% include "footer.njk" %}
+    </div>
+  </div>
+</body>
+</html>
+
