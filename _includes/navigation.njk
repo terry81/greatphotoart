@@ -1,0 +1,52 @@
+<div class="wrapper-menu">
+  <div class="container">
+    <nav id="menu">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target="#nav-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse" id="nav-menu">
+            <ul class="nav menu">
+              <li class="item-101"><a href="{{ pathPrefix }}index.html">Фото курс</a></li>
+
+              <li class="item-110 deeper parent dropdown">
+                <a href='{{ pathPrefix }}photography.html' class='dropdown-toggle disabled' data-toggle='dropdown'>
+                  <span class=''>Фотография</span><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="item-121"><a href="{% if page.url.startsWith('/photography/') %}corporativna-fotografia.html{% else %}{{ pathPrefix }}photography/corporativna-fotografia.html{% endif %}">Корпоративна фотография</a></li>
+                  <li class="item-122"><a href="{% if page.url.startsWith('/photography/') %}produktova-fotografia.html{% else %}{{ pathPrefix }}photography/produktova-fotografia.html{% endif %}">Продуктова фотография</a></li>
+                  <li class="item-123"><a href="{% if page.url.startsWith('/photography/') %}reklamna-fotografia.html{% else %}{{ pathPrefix }}photography/reklamna-fotografia.html{% endif %}">Рекламна фотография</a></li>
+                  <li class="item-152"><a href="{% if page.url.startsWith('/photography/') %}editorial-photography.html{% else %}{{ pathPrefix }}photography/editorial-photography.html{% endif %}">Editorial фотография</a></li>
+                  <li class="item-188"><a href="{% if page.url.startsWith('/photography/') %}360panorama.html{% else %}{{ pathPrefix }}photography/360panorama.html{% endif %}">360 панорама</a></li>
+                </ul>
+              </li>
+
+              <li class="item-111 deeper parent dropdown">
+                <a href='{{ pathPrefix }}foto-kursove.html' class='dropdown-toggle disabled' data-toggle='dropdown'>
+                  <span class=''>Фотокурсове</span><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="item-134"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-nachinaeshti.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-nachinaeshti.html{% endif %}">Фотокурс за начинаещи</a></li>
+                  <li class="item-138"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-naprednali.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-naprednali.html{% endif %}">Фотокурс за напреднали и любители</a></li>
+                  <li class="item-169"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-deca.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-deca.html{% endif %}">Фото курс за деца</a></li>
+                  <li class="item-189"><a href="{% if page.url.startsWith('/foto-kursove/') %}individualen-kurs.html{% else %}{{ pathPrefix }}foto-kursove/individualen-kurs.html{% endif %}">Индивидуален курс по фотография</a></li>
+                  <li class="item-168"><a href="{% if page.url.startsWith('/foto-kursove/') %}dslr-video-kurs.html{% else %}{{ pathPrefix }}foto-kursove/dslr-video-kurs.html{% endif %}">Курс по видеозаснемане с DSLR</a></li>
+                  <li class="item-153"><a href="{% if page.url.startsWith('/foto-kursove/') %}grafik-ceni.html{% else %}{{ pathPrefix }}foto-kursove/grafik-ceni.html{% endif %}">График на фотокурсовете</a></li>
+                </ul>
+              </li>
+
+              <li class="item-114"><a href="{{ pathPrefix }}teambuilding.html">Тиймбилдинг</a></li>
+              <li class="item-151"><a href="{{ pathPrefix }}multimedia.html">Мултимедия</a></li>
+              <li class="item-152"><a href="{{ pathPrefix }}ekip.html">Екип</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
