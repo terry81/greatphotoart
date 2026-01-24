@@ -1,5 +1,5 @@
 # Robots.txt for Great Photo Art
-# Updated: December 2024
+# Updated: January 2026
 
 User-agent: *
 Allow: /
