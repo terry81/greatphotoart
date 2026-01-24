@@ -1,19 +1,132 @@
 /* Custom Styles for Great Photo Art */
+/* Performance & UX Improvements - Updated January 2026 */
+
+/* ========================================
+   Performance Optimizations
+   ======================================== */
+
+/* Smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Content-visibility for off-screen content */
+.item-page > div:not(:first-child) {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+}
+
+/* ========================================
+   Accessibility Improvements
+   ======================================== */
 
 /* Skip to content link */
 .skip-to-content {
     position: absolute;
     left: -9999px;
     top: 0;
-    z-index: 999;
+    z-index: 9999;
     background: #A5BD33;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 5px 0;
 }
 
 .skip-to-content:focus {
-    left: 0px;
+    left: 0;
+    outline: 3px solid #464646;
+}
+
+/* Visually hidden but accessible */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Improve focus states for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+    outline: 3px solid #A5BD33;
+    outline-offset: 2px;
+}
+
+/* Focus visible for keyboard users only */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #A5BD33;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   Breadcrumb Navigation
+   ======================================== */
+
+.breadcrumb-nav {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb li::after {
+    content: "›";
+    margin: 0 8px;
+    color: #999;
+}
+
+.breadcrumb li:last-child::after {
+    content: none;
+}
+
+.breadcrumb a {
+    color: #A5BD33;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
 }
 
 /* Course buttons */
@@ -33,14 +146,14 @@
     height: 50px;
     text-align: center;
     vertical-align: middle;
-    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
     border-radius: 3px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-button-list li:hover {
     transform: translateY(-2px);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px 0px;
 }
 
 .course-button-list li:nth-child(4n) {
@@ -60,14 +173,64 @@
     color: #ffffff;
     height: 100%;
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 3px;
     text-decoration: none;
 }
 
-.course-button-list li a:hover {
+.course-button-list li a:hover,
+.course-button-list li a:focus {
     color: #ffffff;
+    text-decoration: none;
 }
+
+/* ========================================
+   Floating Contact Button
+   ======================================== */
+
+.floating-contact-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #A5BD33 0%, #8fa329 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(165, 189, 51, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+.floating-contact-btn:hover,
+.floating-contact-btn:focus {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(165, 189, 51, 0.6);
+}
+
+.floating-contact-btn .phone-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(165, 189, 51, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(165, 189, 51, 0.6);
+    }
+}
+
+/* ========================================
+   Image Optimizations
+   ======================================== */
 
 /* Social media icons */
 .social-icons {
@@ -77,11 +240,12 @@
 .social-icons img {
     margin: 0 5px 0 0;
     float: right;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .social-icons img:hover {
     opacity: 0.8;
+    transform: scale(1.1);
 }
 
 /* Footer images */
@@ -90,9 +254,28 @@
     height: auto;
 }
 
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+    background: #f0f0f0;
+}
+
 /* Deprecated attributes replacement */
 img {
     border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Aspect ratio for slider images to prevent CLS */
+.nivoSlider {
+    aspect-ratio: 960/460;
+    background: #f5f5f5;
+}
+
+.nivoSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Improve accessibility */
@@ -130,7 +313,57 @@ textarea:focus {
     pointer-events: none !important;
 }
 
-/* Responsive improvements */
+/* ========================================
+   Course Cards Styling
+   ======================================== */
+
+.course-card {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card h3.green {
+    color: #A5BD33;
+}
+
+.course-card h3.dark {
+    color: #464646;
+}
+
+/* Call to Action buttons */
+.grafic-button a {
+    display: inline-block;
+    background: linear-gradient(135deg, #A5BD33 0%, #8fa329 100%);
+    color: white !important;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grafic-button a:hover,
+.grafic-button a:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(165, 189, 51, 0.4);
+}
+
+/* ========================================
+   Responsive improvements
+   ======================================== */
+
 @media (max-width: 768px) {
     .course-button-list li {
         width: 48%;
@@ -144,12 +377,58 @@ textarea:focus {
     .course-button-list li:nth-child(4n) {
         margin-right: 2%;
     }
+
+    .floating-contact-btn {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
     .course-button-list li {
         width: 100%;
         margin-right: 0;
+    }
+
+    .floating-contact-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-contact-btn .phone-icon {
+        font-size: 20px;
+    }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+    .floating-contact-btn,
+    .skip-to-content,
+    #menu,
+    .wrapper-menu,
+    .nivo-controlNav {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
     }
 }
 

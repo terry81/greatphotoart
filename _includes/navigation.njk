@@ -1,47 +1,48 @@
 <div class="wrapper-menu">
   <div class="container">
-    <nav id="menu">
+    <nav id="menu" role="navigation" aria-label="Основна навигация">
       <div class="navbar">
         <div class="navbar-inner">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target="#nav-menu">
+          <button class="btn btn-navbar" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="nav-menu" aria-label="Отвори менюто">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
+          </button>
           <div class="nav-collapse" id="nav-menu">
-            <ul class="nav menu">
-              <li class="item-101"><a href="{{ pathPrefix }}index.html">Фото курс</a></li>
+            <ul class="nav menu" role="menubar">
+              <li class="item-101" role="none"><a href="{{ pathPrefix }}index.html" role="menuitem">Фото курс</a></li>
 
-              <li class="item-110 deeper parent dropdown">
-                <a href='{{ pathPrefix }}photography.html' class='dropdown-toggle disabled' data-toggle='dropdown'>
-                  <span class=''>Фотография</span><b class="caret"></b>
+              <li class="item-110 deeper parent dropdown" role="none">
+                <a href='{{ pathPrefix }}photography.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false">
+                  <span class=''>Фотография</span><b class="caret" aria-hidden="true"></b>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="item-121"><a href="{% if page.url.startsWith('/photography/') %}corporativna-fotografia.html{% else %}{{ pathPrefix }}photography/corporativna-fotografia.html{% endif %}">Корпоративна фотография</a></li>
-                  <li class="item-122"><a href="{% if page.url.startsWith('/photography/') %}produktova-fotografia.html{% else %}{{ pathPrefix }}photography/produktova-fotografia.html{% endif %}">Продуктова фотография</a></li>
-                  <li class="item-123"><a href="{% if page.url.startsWith('/photography/') %}reklamna-fotografia.html{% else %}{{ pathPrefix }}photography/reklamna-fotografia.html{% endif %}">Рекламна фотография</a></li>
-                  <li class="item-152"><a href="{% if page.url.startsWith('/photography/') %}editorial-photography.html{% else %}{{ pathPrefix }}photography/editorial-photography.html{% endif %}">Editorial фотография</a></li>
-                  <li class="item-188"><a href="{% if page.url.startsWith('/photography/') %}360panorama.html{% else %}{{ pathPrefix }}photography/360panorama.html{% endif %}">360 панорама</a></li>
+                <ul class="dropdown-menu" role="menu" aria-label="Подменю Фотография">
+                  <li class="item-121" role="none"><a href="{% if page.url.startsWith('/photography/') %}corporativna-fotografia.html{% else %}{{ pathPrefix }}photography/corporativna-fotografia.html{% endif %}" role="menuitem">Корпоративна фотография</a></li>
+                  <li class="item-122" role="none"><a href="{% if page.url.startsWith('/photography/') %}produktova-fotografia.html{% else %}{{ pathPrefix }}photography/produktova-fotografia.html{% endif %}" role="menuitem">Продуктова фотография</a></li>
+                  <li class="item-123" role="none"><a href="{% if page.url.startsWith('/photography/') %}reklamna-fotografia.html{% else %}{{ pathPrefix }}photography/reklamna-fotografia.html{% endif %}" role="menuitem">Рекламна фотография</a></li>
+                  <li class="item-152" role="none"><a href="{% if page.url.startsWith('/photography/') %}editorial-photography.html{% else %}{{ pathPrefix }}photography/editorial-photography.html{% endif %}" role="menuitem">Editorial фотография</a></li>
+                  <li class="item-188" role="none"><a href="{% if page.url.startsWith('/photography/') %}360panorama.html{% else %}{{ pathPrefix }}photography/360panorama.html{% endif %}" role="menuitem">360 панорама</a></li>
                 </ul>
               </li>
 
-              <li class="item-111 deeper parent dropdown">
-                <a href='{{ pathPrefix }}foto-kursove.html' class='dropdown-toggle disabled' data-toggle='dropdown'>
-                  <span class=''>Фотокурсове</span><b class="caret"></b>
+              <li class="item-111 deeper parent dropdown" role="none">
+                <a href='{{ pathPrefix }}foto-kursove.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false">
+                  <span class=''>Фотокурсове</span><b class="caret" aria-hidden="true"></b>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="item-134"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-nachinaeshti.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-nachinaeshti.html{% endif %}">Фотокурс за начинаещи</a></li>
-                  <li class="item-138"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-naprednali.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-naprednali.html{% endif %}">Фотокурс за напреднали и любители</a></li>
-                  <li class="item-169"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-deca.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-deca.html{% endif %}">Фото курс за деца</a></li>
-                  <li class="item-189"><a href="{% if page.url.startsWith('/foto-kursove/') %}individualen-kurs.html{% else %}{{ pathPrefix }}foto-kursove/individualen-kurs.html{% endif %}">Индивидуален курс по фотография</a></li>
-                  <li class="item-168"><a href="{% if page.url.startsWith('/foto-kursove/') %}dslr-video-kurs.html{% else %}{{ pathPrefix }}foto-kursove/dslr-video-kurs.html{% endif %}">Курс по видеозаснемане с DSLR</a></li>
-                  <li class="item-153"><a href="{% if page.url.startsWith('/foto-kursove/') %}grafik-ceni.html{% else %}{{ pathPrefix }}foto-kursove/grafik-ceni.html{% endif %}">График на фотокурсовете</a></li>
+                <ul class="dropdown-menu" role="menu" aria-label="Подменю Фотокурсове">
+                  <li class="item-134" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-nachinaeshti.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-nachinaeshti.html{% endif %}" role="menuitem">Фотокурс за начинаещи</a></li>
+                  <li class="item-138" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-naprednali.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-naprednali.html{% endif %}" role="menuitem">Фотокурс за напреднали и любители</a></li>
+                  <li class="item-169" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-deca.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-deca.html{% endif %}" role="menuitem">Фото курс за деца</a></li>
+                  <li class="item-189" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}individualen-kurs.html{% else %}{{ pathPrefix }}foto-kursove/individualen-kurs.html{% endif %}" role="menuitem">Индивидуален курс по фотография</a></li>
+                  <li class="item-168" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}dslr-video-kurs.html{% else %}{{ pathPrefix }}foto-kursove/dslr-video-kurs.html{% endif %}" role="menuitem">Курс по видеозаснемане с DSLR</a></li>
+                  <li class="item-153" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}grafik-ceni.html{% else %}{{ pathPrefix }}foto-kursove/grafik-ceni.html{% endif %}" role="menuitem">График на фотокурсовете</a></li>
                 </ul>
               </li>
 
-              <li class="item-114"><a href="{{ pathPrefix }}teambuilding.html">Тиймбилдинг</a></li>
-              <li class="item-151"><a href="{{ pathPrefix }}multimedia.html">Мултимедия</a></li>
-              <li class="item-152"><a href="{{ pathPrefix }}ekip.html">Екип</a></li>
+              <li class="item-114" role="none"><a href="{{ pathPrefix }}teambuilding.html" role="menuitem">Тиймбилдинг</a></li>
+              <li class="item-151" role="none"><a href="{{ pathPrefix }}multimedia.html" role="menuitem">Мултимедия</a></li>
+              <li class="item-152" role="none"><a href="{{ pathPrefix }}ekip.html" role="menuitem">Екип</a></li>
+              <li class="item-153" role="none"><a href="{{ pathPrefix }}contacts.html" role="menuitem">Контакти</a></li>
             </ul>
           </div>
         </div>

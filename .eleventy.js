@@ -1,3 +1,5 @@
+const htmlmin = require("html-minifier-terser");
+
 module.exports = function(eleventyConfig) {
   // Copy static assets directly to output
   eleventyConfig.addPassthroughCopy("css");
@@ -40,6 +42,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("relativePath", function(path, level = 0) {
     const prefix = level > 0 ? '../'.repeat(level) : '';
     return prefix + path;
+  });
+
+  // HTML Minification for production builds
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (process.env.ELEVENTY_ENV === "production" && outputPath && outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      });
+    }
+    return content;
   });
 
   return {

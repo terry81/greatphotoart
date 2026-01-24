@@ -2,14 +2,27 @@
   "url": "https://greatphotoart.com/",
   "title": "Great Photo Art",
   "description": "Курсове по фотография в София и Пловдив за начинаещи, напреднали и деца. Професионални фотографски услуги.",
-  "keywords": "фото курс, курс по фотография, фотография София, фотография Пловдив",
+  "keywords": "фото курс, курс по фотография, фотография София, фотография Пловдив, курс фотография начинаещи, индивидуален курс фотография",
   "author": "Great Photo Art",
   "email": "photo@greatphotoart.com",
   "phone": "+359 884 779 121",
+  "address": {
+    "street": "бул. Васил Левски 57",
+    "city": "София",
+    "region": "София-град",
+    "postalCode": "1142",
+    "country": "BG"
+  },
+  "geo": {
+    "latitude": 42.6977,
+    "longitude": 23.3219
+  },
   "social": {
     "facebook": "https://www.facebook.com/GreatPhotoArt",
     "twitter": "https://twitter.com/GreatPhotoArt",
     "pinterest": "https://pinterest.com/greatphotoart/"
-  }
+  },
+  "businessHours": "Понеделник-Петък: 10:00-19:00",
+  "foundingYear": 2008
 }
 

@@ -1,28 +1,69 @@
 <div class="wrapper-footer">
-  <footer class="footer" id="footer">
+  <footer class="footer" id="footer" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="module mod_1 first no_title span4">
           <div class="newsflash">
             <p>
-              Всички права запазени. Great Photo Art {% year %}
+              © {% year %} Great Photo Art. Всички права запазени.
             </p>
           </div>
         </div>
 
-        <div class="module mod_2 last span8">
-          <!-- Additional footer content -->
+        <div class="module mod_2 span4">
+          <address class="footer-contact" style="font-style: normal;">
+            <p style="margin: 5px 0;">
+              <strong>Телефон:</strong> <a href="tel:+359884779121">+359 884 779 121</a>
+            </p>
+            <p style="margin: 5px 0;">
+              <strong>Email:</strong> <a href="mailto:photo@greatphotoart.com">photo@greatphotoart.com</a>
+            </p>
+          </address>
+        </div>
+
+        <div class="module mod_3 last span4">
+          <nav aria-label="Социални мрежи" class="footer-social" style="text-align: right;">
+            <a href="https://www.facebook.com/GreatPhotoArt" aria-label="Facebook" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Facebook</a>
+            <a href="https://twitter.com/GreatPhotoArt" aria-label="Twitter" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Twitter</a>
+            <a href="https://pinterest.com/greatphotoart/" aria-label="Pinterest" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Pinterest</a>
+          </nav>
         </div>
       </div>
     </div>
   </footer>
 </div>
 
-<script src="{{ pathPrefix }}templates/js_wright/wright/bootstrap/js/bootstrap.min.js"></script>
+<!-- Floating Contact Button -->
+<a href="tel:+359884779121" class="floating-contact-btn" aria-label="Обадете се сега" title="Обадете се сега: +359 884 779 121">
+  <span class="phone-icon">📞</span>
+</a>
+
+<script src="{{ pathPrefix }}templates/js_wright/wright/bootstrap/js/bootstrap.min.js" defer></script>
 <script type="text/javascript">
-  jQuery(document).ready(function($) {
+  document.addEventListener('DOMContentLoaded', function() {
     // Bootstrap dropdown functionality
-    $('.dropdown-toggle').dropdown();
+    if (typeof jQuery !== 'undefined') {
+      jQuery('.dropdown-toggle').dropdown();
+    }
+
+    // Lazy load images with native lazy loading fallback
+    if ('loading' in HTMLImageElement.prototype) {
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      lazyImages.forEach(img => {
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+        }
+      });
+    }
+
+    // Initialize Fancybox for galleries if available
+    if (typeof Fancybox !== 'undefined') {
+      Fancybox.bind("[data-fancybox]", {
+        animated: true,
+        showClass: "fancybox-fadeIn",
+        hideClass: "fancybox-fadeOut",
+      });
+    }
   });
 </script>
 
