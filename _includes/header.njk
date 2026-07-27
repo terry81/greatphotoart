@@ -1,25 +1,29 @@
 <header id="header" role="banner">
-  <div class="row clearfix">
-    <div id="logo" class="span10">
+  <div class="header-inner">
+    <div id="logo" class="header-brand">
       <div class="custom">
-        <p><a href="{{ pathPrefix }}index.html" title="greatphotoart.com - Начална страница"><img src="{{ pathPrefix }}images/logo.png" alt="Great Photo Art - Курсове по фотография" width="280" height="80" /></a></p>
+        <a class="brand-link" href="{{ pathPrefix }}index.html" title="greatphotoart.com - Начална страница">
+          <img src="{{ pathPrefix }}images/logo.png" alt="Great Photo Art - Курсове по фотография" width="280" height="80" />
+        </a>
+        <p class="site-tagline">Фотографска школа и професионално студио в София и Пловдив</p>
       </div>
     </div>
-    <div id="top" class="span2">
+    <div id="top" class="header-tools">
       <div id="top_primary" class="clearfix">
         <div class="moduletable">
+          <div class="header-actions" aria-label="Бързи контакти">
+            <a class="header-phone" href="tel:+359884779121" aria-label="Обадете се на Great Photo Art">{{ site.phone }}</a>
+            <a class="header-cta" href="{{ pathPrefix }}contacts.html">Запитване</a>
+          </div>
           <h3 class="visually-hidden">Социални мрежи</h3>
           <nav aria-label="Социални мрежи" class="social-icons">
-            <p>
-              <a href="https://pinterest.com/greatphotoart/" aria-label="Следвайте ни в Pinterest" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/1.png" alt="" width="32" height="32" loading="lazy" /></a>
-              <a href="https://twitter.com/GreatPhotoArt" aria-label="Следвайте ни в Twitter" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/3.png" alt="" width="32" height="32" loading="lazy" /></a>
-              <a href="https://www.facebook.com/GreatPhotoArt" aria-label="Следвайте ни във Facebook" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/2.png" alt="" width="32" height="32" loading="lazy" /></a>
-            </p>
+            <a href="{{ site.social.pinterest }}" aria-label="Следвайте ни в Pinterest" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/1.png" alt="" width="32" height="32" loading="lazy" /></a>
+            <a href="{{ site.social.twitter }}" aria-label="Следвайте ни в Twitter" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/3.png" alt="" width="32" height="32" loading="lazy" /></a>
+            <a href="{{ site.social.facebook }}" aria-label="Следвайте ни във Facebook" rel="noopener noreferrer" target="_blank"><img src="{{ pathPrefix }}images/2.png" alt="" width="32" height="32" loading="lazy" /></a>
           </nav>
         </div>
       </div>
     </div>
-    <div class="clear"></div>
   </div>
 </header>
 

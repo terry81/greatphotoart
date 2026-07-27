@@ -1,5 +1,53 @@
 const htmlmin = require("html-minifier-terser");
 
+function absoluteUrl(urlPath = "", baseUrl = "") {
+  const rawPath = String(urlPath || "");
+
+  if (/^https?:\/\//i.test(rawPath)) {
+    return rawPath;
+  }
+
+  const base = String(baseUrl || "").replace(/\/+$/, "");
+  let normalizedPath = rawPath.replace(/^\/+/, "");
+
+  if (!normalizedPath || normalizedPath === "index.html") {
+    return `${base}/`;
+  }
+
+  normalizedPath = normalizedPath.replace(/\/index\.html$/, "/");
+  return `${base}/${normalizedPath}`;
+}
+
+function cleanTitle(title = "") {
+  return String(title).split("|")[0].trim();
+}
+
+function getBreadcrumbs(data) {
+  const pageUrl = String((data.page && data.page.url) || data.permalink || "").replace(/^\/+/, "");
+
+  if (!pageUrl || pageUrl === "index.html" || pageUrl === "404.html") {
+    return null;
+  }
+
+  const parentPages = {
+    "foto-kursove": { title: "Фотокурсове", url: "foto-kursove.html" },
+    "photography": { title: "Фотография", url: "photography.html" }
+  };
+
+  const currentCrumb = {
+    title: data.breadcrumbTitle || cleanTitle(data.title),
+    url: pageUrl
+  };
+
+  const segments = pageUrl.split("/");
+
+  if (segments.length > 1 && parentPages[segments[0]]) {
+    return [parentPages[segments[0]], currentCrumb];
+  }
+
+  return [currentCrumb];
+}
+
 module.exports = function(eleventyConfig) {
   // Copy static assets directly to output
   eleventyConfig.addPassthroughCopy("css");
@@ -27,6 +75,18 @@ module.exports = function(eleventyConfig) {
 
   // Create a custom shortcode for the navigation
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // SEO helpers
+  eleventyConfig.addFilter("absoluteUrl", absoluteUrl);
+  eleventyConfig.addFilter("cleanTitle", cleanTitle);
+  eleventyConfig.addFilter("json", function(value) {
+    return JSON.stringify(value, null, process.env.ELEVENTY_ENV === "production" ? 0 : 2)
+      .replace(/</g, "\\u003c");
+  });
+
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    breadcrumbs: getBreadcrumbs
+  });
 
   // Create path helper for subdirectory pages
   eleventyConfig.addFilter("relativePath", function(path, level = 0) {

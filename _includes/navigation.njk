@@ -1,3 +1,12 @@
+{% set currentUrl = page.url or "" %}
+{% set isHome = currentUrl == "/" or currentUrl == "/index.html" or currentUrl == "index.html" %}
+{% set isPhotography = currentUrl == "/photography.html" or currentUrl == "photography.html" or currentUrl.startsWith("/photography/") or currentUrl.startsWith("photography/") %}
+{% set isCourses = currentUrl == "/foto-kursove.html" or currentUrl == "foto-kursove.html" or currentUrl.startsWith("/foto-kursove/") or currentUrl.startsWith("foto-kursove/") %}
+{% set isTeambuilding = currentUrl == "/teambuilding.html" or currentUrl == "teambuilding.html" %}
+{% set isMultimedia = currentUrl == "/multimedia.html" or currentUrl == "multimedia.html" %}
+{% set isTeam = currentUrl == "/ekip.html" or currentUrl == "ekip.html" %}
+{% set isContacts = currentUrl == "/contacts.html" or currentUrl == "contacts.html" %}
+
 <div class="wrapper-menu">
   <div class="container">
     <nav id="menu" role="navigation" aria-label="Основна навигация">
@@ -10,39 +19,39 @@
           </button>
           <div class="nav-collapse" id="nav-menu">
             <ul class="nav menu" role="menubar">
-              <li class="item-101" role="none"><a href="{{ pathPrefix }}index.html" role="menuitem">Фото курс</a></li>
+              <li class="item-101{% if isHome %} active{% endif %}" role="none"><a href="{{ pathPrefix }}index.html" role="menuitem"{% if isHome %} aria-current="page"{% endif %}>Фото курс</a></li>
 
-              <li class="item-110 deeper parent dropdown" role="none">
-                <a href='{{ pathPrefix }}photography.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <li class="item-110 deeper parent dropdown{% if isPhotography %} active{% endif %}" role="none">
+                <a href='{{ pathPrefix }}photography.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false"{% if currentUrl == "/photography.html" or currentUrl == "photography.html" %} aria-current="page"{% endif %}>
                   <span class=''>Фотография</span><b class="caret" aria-hidden="true"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-label="Подменю Фотография">
-                  <li class="item-121" role="none"><a href="{% if page.url.startsWith('/photography/') %}corporativna-fotografia.html{% else %}{{ pathPrefix }}photography/corporativna-fotografia.html{% endif %}" role="menuitem">Корпоративна фотография</a></li>
-                  <li class="item-122" role="none"><a href="{% if page.url.startsWith('/photography/') %}produktova-fotografia.html{% else %}{{ pathPrefix }}photography/produktova-fotografia.html{% endif %}" role="menuitem">Продуктова фотография</a></li>
-                  <li class="item-123" role="none"><a href="{% if page.url.startsWith('/photography/') %}reklamna-fotografia.html{% else %}{{ pathPrefix }}photography/reklamna-fotografia.html{% endif %}" role="menuitem">Рекламна фотография</a></li>
-                  <li class="item-152" role="none"><a href="{% if page.url.startsWith('/photography/') %}editorial-photography.html{% else %}{{ pathPrefix }}photography/editorial-photography.html{% endif %}" role="menuitem">Editorial фотография</a></li>
-                  <li class="item-188" role="none"><a href="{% if page.url.startsWith('/photography/') %}360panorama.html{% else %}{{ pathPrefix }}photography/360panorama.html{% endif %}" role="menuitem">360 панорама</a></li>
+                  <li class="item-121{% if currentUrl == "/photography/corporativna-fotografia.html" or currentUrl == "photography/corporativna-fotografia.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/photography/') or currentUrl.startsWith('photography/') %}corporativna-fotografia.html{% else %}{{ pathPrefix }}photography/corporativna-fotografia.html{% endif %}" role="menuitem"{% if currentUrl == "/photography/corporativna-fotografia.html" or currentUrl == "photography/corporativna-fotografia.html" %} aria-current="page"{% endif %}>Корпоративна фотография</a></li>
+                  <li class="item-122{% if currentUrl == "/photography/produktova-fotografia.html" or currentUrl == "photography/produktova-fotografia.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/photography/') or currentUrl.startsWith('photography/') %}produktova-fotografia.html{% else %}{{ pathPrefix }}photography/produktova-fotografia.html{% endif %}" role="menuitem"{% if currentUrl == "/photography/produktova-fotografia.html" or currentUrl == "photography/produktova-fotografia.html" %} aria-current="page"{% endif %}>Продуктова фотография</a></li>
+                  <li class="item-123{% if currentUrl == "/photography/reklamna-fotografia.html" or currentUrl == "photography/reklamna-fotografia.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/photography/') or currentUrl.startsWith('photography/') %}reklamna-fotografia.html{% else %}{{ pathPrefix }}photography/reklamna-fotografia.html{% endif %}" role="menuitem"{% if currentUrl == "/photography/reklamna-fotografia.html" or currentUrl == "photography/reklamna-fotografia.html" %} aria-current="page"{% endif %}>Рекламна фотография</a></li>
+                  <li class="item-152{% if currentUrl == "/photography/editorial-photography.html" or currentUrl == "photography/editorial-photography.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/photography/') or currentUrl.startsWith('photography/') %}editorial-photography.html{% else %}{{ pathPrefix }}photography/editorial-photography.html{% endif %}" role="menuitem"{% if currentUrl == "/photography/editorial-photography.html" or currentUrl == "photography/editorial-photography.html" %} aria-current="page"{% endif %}>Editorial фотография</a></li>
+                  <li class="item-188{% if currentUrl == "/photography/360panorama.html" or currentUrl == "photography/360panorama.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/photography/') or currentUrl.startsWith('photography/') %}360panorama.html{% else %}{{ pathPrefix }}photography/360panorama.html{% endif %}" role="menuitem"{% if currentUrl == "/photography/360panorama.html" or currentUrl == "photography/360panorama.html" %} aria-current="page"{% endif %}>360 панорама</a></li>
                 </ul>
               </li>
 
-              <li class="item-111 deeper parent dropdown" role="none">
-                <a href='{{ pathPrefix }}foto-kursove.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <li class="item-111 deeper parent dropdown{% if isCourses %} active{% endif %}" role="none">
+                <a href='{{ pathPrefix }}foto-kursove.html' class='dropdown-toggle disabled' data-toggle='dropdown' role="menuitem" aria-haspopup="true" aria-expanded="false"{% if currentUrl == "/foto-kursove.html" or currentUrl == "foto-kursove.html" %} aria-current="page"{% endif %}>
                   <span class=''>Фотокурсове</span><b class="caret" aria-hidden="true"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-label="Подменю Фотокурсове">
-                  <li class="item-134" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-nachinaeshti.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-nachinaeshti.html{% endif %}" role="menuitem">Фотокурс за начинаещи</a></li>
-                  <li class="item-138" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-naprednali.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-naprednali.html{% endif %}" role="menuitem">Фотокурс за напреднали и любители</a></li>
-                  <li class="item-169" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}kurs-za-deca.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-deca.html{% endif %}" role="menuitem">Фото курс за деца</a></li>
-                  <li class="item-189" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}individualen-kurs.html{% else %}{{ pathPrefix }}foto-kursove/individualen-kurs.html{% endif %}" role="menuitem">Индивидуален курс по фотография</a></li>
-                  <li class="item-168" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}dslr-video-kurs.html{% else %}{{ pathPrefix }}foto-kursove/dslr-video-kurs.html{% endif %}" role="menuitem">Курс по видеозаснемане с DSLR</a></li>
-                  <li class="item-153" role="none"><a href="{% if page.url.startsWith('/foto-kursove/') %}grafik-ceni.html{% else %}{{ pathPrefix }}foto-kursove/grafik-ceni.html{% endif %}" role="menuitem">График на фотокурсовете</a></li>
+                  <li class="item-134{% if currentUrl == "/foto-kursove/kurs-za-nachinaeshti.html" or currentUrl == "foto-kursove/kurs-za-nachinaeshti.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}kurs-za-nachinaeshti.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-nachinaeshti.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/kurs-za-nachinaeshti.html" or currentUrl == "foto-kursove/kurs-za-nachinaeshti.html" %} aria-current="page"{% endif %}>Фотокурс за начинаещи</a></li>
+                  <li class="item-138{% if currentUrl == "/foto-kursove/kurs-za-naprednali.html" or currentUrl == "foto-kursove/kurs-za-naprednali.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}kurs-za-naprednali.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-naprednali.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/kurs-za-naprednali.html" or currentUrl == "foto-kursove/kurs-za-naprednali.html" %} aria-current="page"{% endif %}>Фотокурс за напреднали и любители</a></li>
+                  <li class="item-169{% if currentUrl == "/foto-kursove/kurs-za-deca.html" or currentUrl == "foto-kursove/kurs-za-deca.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}kurs-za-deca.html{% else %}{{ pathPrefix }}foto-kursove/kurs-za-deca.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/kurs-za-deca.html" or currentUrl == "foto-kursove/kurs-za-deca.html" %} aria-current="page"{% endif %}>Фото курс за деца</a></li>
+                  <li class="item-189{% if currentUrl == "/foto-kursove/individualen-kurs.html" or currentUrl == "foto-kursove/individualen-kurs.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}individualen-kurs.html{% else %}{{ pathPrefix }}foto-kursove/individualen-kurs.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/individualen-kurs.html" or currentUrl == "foto-kursove/individualen-kurs.html" %} aria-current="page"{% endif %}>Индивидуален курс по фотография</a></li>
+                  <li class="item-168{% if currentUrl == "/foto-kursove/dslr-video-kurs.html" or currentUrl == "foto-kursove/dslr-video-kurs.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}dslr-video-kurs.html{% else %}{{ pathPrefix }}foto-kursove/dslr-video-kurs.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/dslr-video-kurs.html" or currentUrl == "foto-kursove/dslr-video-kurs.html" %} aria-current="page"{% endif %}>Курс по видеозаснемане с DSLR</a></li>
+                  <li class="item-153{% if currentUrl == "/foto-kursove/grafik-ceni.html" or currentUrl == "foto-kursove/grafik-ceni.html" %} active{% endif %}" role="none"><a href="{% if currentUrl.startsWith('/foto-kursove/') or currentUrl.startsWith('foto-kursove/') %}grafik-ceni.html{% else %}{{ pathPrefix }}foto-kursove/grafik-ceni.html{% endif %}" role="menuitem"{% if currentUrl == "/foto-kursove/grafik-ceni.html" or currentUrl == "foto-kursove/grafik-ceni.html" %} aria-current="page"{% endif %}>График на фотокурсовете</a></li>
                 </ul>
               </li>
 
-              <li class="item-114" role="none"><a href="{{ pathPrefix }}teambuilding.html" role="menuitem">Тиймбилдинг</a></li>
-              <li class="item-151" role="none"><a href="{{ pathPrefix }}multimedia.html" role="menuitem">Мултимедия</a></li>
-              <li class="item-152" role="none"><a href="{{ pathPrefix }}ekip.html" role="menuitem">Екип</a></li>
-              <li class="item-153" role="none"><a href="{{ pathPrefix }}contacts.html" role="menuitem">Контакти</a></li>
+              <li class="item-114{% if isTeambuilding %} active{% endif %}" role="none"><a href="{{ pathPrefix }}teambuilding.html" role="menuitem"{% if isTeambuilding %} aria-current="page"{% endif %}>Тиймбилдинг</a></li>
+              <li class="item-151{% if isMultimedia %} active{% endif %}" role="none"><a href="{{ pathPrefix }}multimedia.html" role="menuitem"{% if isMultimedia %} aria-current="page"{% endif %}>Мултимедия</a></li>
+              <li class="item-152{% if isTeam %} active{% endif %}" role="none"><a href="{{ pathPrefix }}ekip.html" role="menuitem"{% if isTeam %} aria-current="page"{% endif %}>Екип</a></li>
+              <li class="item-153{% if isContacts %} active{% endif %}" role="none"><a href="{{ pathPrefix }}contacts.html" role="menuitem"{% if isContacts %} aria-current="page"{% endif %}>Контакти</a></li>
             </ul>
           </div>
         </div>
