@@ -1,11 +1,20 @@
 {
-  "url": "https://greatphotoart.com/",
+  "url": "https://greatphotoart.com",
   "title": "Great Photo Art",
   "description": "Курсове по фотография в София и Пловдив за начинаещи, напреднали и деца. Професионални фотографски услуги.",
   "keywords": "фото курс, курс по фотография, фотография София, фотография Пловдив, курс фотография начинаещи, индивидуален курс фотография",
   "author": "Great Photo Art",
   "email": "photo@greatphotoart.com",
   "phone": "+359 884 779 121",
+  "defaultImage": "images/GPA_logo.jpg",
+  "imageAlt": "Great Photo Art - курсове по фотография и професионални фотографски услуги",
+  "locale": "bg_BG",
+  "language": "bg",
+  "dateModified": "2026-07-27",
+  "sitemap": "sitemap.xml",
+  "priceRange": "$$",
+  "currenciesAccepted": "BGN",
+  "paymentAccepted": "Cash, Bank Transfer",
   "address": {
     "street": "бул. Васил Левски 57",
     "city": "София",
@@ -17,12 +26,117 @@
     "latitude": 42.6977,
     "longitude": 23.3219
   },
+  "areaServed": ["София", "Пловдив", "България"],
+  "locations": [
+    {
+      "name": "Great Photo Art София",
+      "street": "бул. Васил Левски 57",
+      "city": "София",
+      "region": "София-град",
+      "postalCode": "1142",
+      "country": "BG",
+      "latitude": 42.6977,
+      "longitude": 23.3219
+    }
+  ],
   "social": {
     "facebook": "https://www.facebook.com/GreatPhotoArt",
     "twitter": "https://twitter.com/GreatPhotoArt",
     "pinterest": "https://pinterest.com/greatphotoart/"
   },
   "businessHours": "Понеделник-Петък: 10:00-19:00",
-  "foundingYear": 2008
+  "foundingYear": 2008,
+  "courses": [
+    {
+      "name": "Фотокурс за начинаещи",
+      "url": "foto-kursove/kurs-za-nachinaeshti.html",
+      "description": "Практически курс по фотография за начинаещи: експозиция, композиция, светлина и работа с фотоапарат.",
+      "audience": "Начинаещи фотографи",
+      "duration": "P6W",
+      "mode": "Онлайн и присъствено обучение",
+      "image": "images/featured-images/cover_02.png"
+    },
+    {
+      "name": "Фотокурс за напреднали",
+      "url": "foto-kursove/kurs-za-naprednali.html",
+      "description": "Обучение за напреднали фотографи със студийна практика, портрети, репортаж и креативни техники.",
+      "audience": "Напреднали любители",
+      "duration": "P6W",
+      "mode": "Онлайн и присъствено обучение",
+      "image": "images/featured-images/cover_06.jpg"
+    },
+    {
+      "name": "Фото курс за деца",
+      "url": "foto-kursove/kurs-za-deca.html",
+      "description": "Забавен и образователен курс по фотография за деца от 8 до 16 години с практически задачи.",
+      "audience": "Деца 8-16 години",
+      "duration": "P10D",
+      "mode": "Присъствено обучение",
+      "image": "images/featured-images/cover_03.jpg"
+    },
+    {
+      "name": "Индивидуален курс по фотография",
+      "url": "foto-kursove/individualen-kurs.html",
+      "description": "Персонално обучение по фотография с гъвкав график и програма според вашите цели.",
+      "audience": "Индивидуални курсисти",
+      "duration": "P1M",
+      "mode": "Индивидуално обучение",
+      "image": "images/featured-images/cover_04.jpg"
+    },
+    {
+      "name": "Курс по видеозаснемане с DSLR",
+      "url": "foto-kursove/dslr-video-kurs.html",
+      "description": "Практически курс за видеозаснемане, осветление, звук и монтаж с DSLR или mirrorless фотоапарат.",
+      "audience": "Фотографи и видеографи",
+      "duration": "P1M",
+      "mode": "Практическо обучение",
+      "image": "images/featured-images/cover_01.jpg"
+    }
+  ],
+  "services": [
+    {
+      "name": "Продуктова фотография",
+      "url": "photography/produktova-fotografia.html",
+      "description": "Професионално заснемане на продукти за онлайн магазини, каталози, рекламни материали и бранд кампании."
+    },
+    {
+      "name": "Рекламна фотография",
+      "url": "photography/reklamna-fotografia.html",
+      "description": "Креативна рекламна фотография за кампании, каталози, визуална идентичност и дигитален маркетинг."
+    },
+    {
+      "name": "Корпоративна фотография",
+      "url": "photography/corporativna-fotografia.html",
+      "description": "Бизнес портрети, екипни снимки, корпоративни събития и визуално съдържание за компании."
+    },
+    {
+      "name": "Editorial фотография",
+      "url": "photography/editorial-photography.html",
+      "description": "Модни и editorial фотосесии за списания, лукбуци, кампании и дигитални издания."
+    },
+    {
+      "name": "360 панорамна фотография",
+      "url": "photography/360panorama.html",
+      "description": "Интерактивни 360° панорами и виртуални обиколки за хотели, ресторанти, магазини и имоти."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Подходящ ли е курсът за напълно начинаещи?",
+      "answer": "Да. Курсът за начинаещи започва от основите: работа с фотоапарат, експозиция, композиция и светлина, като всяка тема се упражнява практически."
+    },
+    {
+      "question": "Трябва ли да имам собствен фотоапарат?",
+      "answer": "Препоръчително е, но не е задължително за първите занятия. Екипът може да ви насочи каква техника е подходяща според целите и бюджета ви."
+    },
+    {
+      "question": "Предлагате ли индивидуално обучение?",
+      "answer": "Да. Индивидуалният курс се провежда с гъвкав график и програма, адаптирана към вашето ниво, жанрове и конкретни цели."
+    },
+    {
+      "question": "Къде се провеждат курсовете?",
+      "answer": "Основната локация е в София, а обучения и практически занимания се организират и за курсисти от Пловдив според актуалния график."
+    }
+  ]
 }
 

@@ -8,12 +8,18 @@
     "build:prod": "ELEVENTY_ENV=production eleventy",
     "clean": "rm -rf _site"
   },
-  "keywords": ["photography", "courses", "bulgaria"],
+  "keywords": [
+    "photography",
+    "courses",
+    "bulgaria"
+  ],
   "author": "Great Photo Art",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "3.1.2",
     "html-minifier-terser": "^7.2.0"
+  },
+  "overrides": {
+    "@11ty/recursive-copy": "5.0.2"
   }
 }
-

@@ -4,28 +4,38 @@
       <div class="row">
         <div class="module mod_1 first no_title span4">
           <div class="newsflash">
-            <p>
-              © {% year %} Great Photo Art. Всички права запазени.
-            </p>
+            <h2 class="footer-heading">{{ site.title }}</h2>
+            <p>Фотографска школа и професионално студио за курсове, продуктова, рекламна и корпоративна фотография.</p>
+            <p class="footer-copy">© {% year %} Great Photo Art. Всички права запазени.</p>
           </div>
         </div>
 
         <div class="module mod_2 span4">
-          <address class="footer-contact" style="font-style: normal;">
-            <p style="margin: 5px 0;">
-              <strong>Телефон:</strong> <a href="tel:+359884779121">+359 884 779 121</a>
+          <h2 class="footer-heading">Контакти</h2>
+          <address class="footer-contact">
+            <p>
+              <strong>Телефон:</strong> <a href="tel:+359884779121">{{ site.phone }}</a>
             </p>
-            <p style="margin: 5px 0;">
-              <strong>Email:</strong> <a href="mailto:photo@greatphotoart.com">photo@greatphotoart.com</a>
+            <p>
+              <strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </p>
+            <p>
+              <strong>Адрес:</strong> {{ site.address.street }}, {{ site.address.city }}
             </p>
           </address>
         </div>
 
         <div class="module mod_3 last span4">
-          <nav aria-label="Социални мрежи" class="footer-social" style="text-align: right;">
-            <a href="https://www.facebook.com/GreatPhotoArt" aria-label="Facebook" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Facebook</a>
-            <a href="https://twitter.com/GreatPhotoArt" aria-label="Twitter" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Twitter</a>
-            <a href="https://pinterest.com/greatphotoart/" aria-label="Pinterest" rel="noopener noreferrer" target="_blank" style="margin: 0 5px;">Pinterest</a>
+          <h2 class="footer-heading">Бързи връзки</h2>
+          <nav aria-label="Връзки в долния колонтитул" class="footer-links">
+            <a href="{{ pathPrefix }}foto-kursove.html">Курсове</a>
+            <a href="{{ pathPrefix }}photography.html">Фотография</a>
+            <a href="{{ pathPrefix }}contacts.html">Контакти</a>
+          </nav>
+          <nav aria-label="Социални мрежи" class="footer-social">
+            <a href="{{ site.social.facebook }}" aria-label="Facebook" rel="noopener noreferrer" target="_blank">Facebook</a>
+            <a href="{{ site.social.twitter }}" aria-label="Twitter" rel="noopener noreferrer" target="_blank">Twitter</a>
+            <a href="{{ site.social.pinterest }}" aria-label="Pinterest" rel="noopener noreferrer" target="_blank">Pinterest</a>
           </nav>
         </div>
       </div>

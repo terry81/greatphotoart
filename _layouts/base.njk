@@ -19,7 +19,12 @@
               </li>
               {% for crumb in breadcrumbs %}
               <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                {% if loop.last %}
+                <span itemprop="name" aria-current="page">{{ crumb.title }}</span>
+                <meta itemprop="item" content="{{ crumb.url | absoluteUrl(site.url) }}" />
+                {% else %}
                 <a href="{{ pathPrefix }}{{ crumb.url }}" itemprop="item"><span itemprop="name">{{ crumb.title }}</span></a>
+                {% endif %}
                 <meta itemprop="position" content="{{ loop.index + 1 }}" />
               </li>
               {% endfor %}
