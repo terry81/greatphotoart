@@ -1,4 +1,6 @@
 const htmlmin = require("html-minifier-terser");
+const fs = require("fs");
+const path = require("path");
 
 function absoluteUrl(urlPath = "", baseUrl = "") {
   const rawPath = String(urlPath || "");
@@ -57,7 +59,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("templates");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
+  // sitemap.xml is now generated from collections in src/sitemap.njk
   // Note: Old Joomla redirect files removed - site uses clean URL structure now
 
   // Don't process these as templates
@@ -92,6 +94,44 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("relativePath", function(path, level = 0) {
     const prefix = level > 0 ? '../'.repeat(level) : '';
     return prefix + path;
+  });
+
+  // Serve WebP (with original as fallback) wherever a derivative exists.
+  // Derivatives are produced by `npm run images` (scripts/optimize-images.js),
+  // so this degrades gracefully if they haven't been generated yet.
+  eleventyConfig.addTransform("webp", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+    const pageDir = path.dirname(outputPath);
+
+    // Returns the .webp twin of a reference, or null when it doesn't exist
+    const webpTwin = (ref) => {
+      if (/^https?:/i.test(ref) || /^data:/i.test(ref)) return null;
+      const abs = path.resolve(pageDir, ref);
+      const rel = path.relative(path.resolve("_site"), abs);
+      if (!rel.startsWith("images" + path.sep)) return null;
+      const onDisk = path.join(process.cwd(), rel).replace(/\.(jpe?g|png)$/i, ".webp");
+      return fs.existsSync(onDisk) ? ref.replace(/\.(jpe?g|png)$/i, ".webp") : null;
+    };
+
+    // Keep image preloads pointing at the resource the browser will actually fetch
+    content = content.replace(/<link\b[^>]*\bas="image"[^>]*>/gi, (link) => {
+      const href = link.match(/\shref="([^"]+\.(?:jpe?g|png))"/i);
+      if (!href) return link;
+      const twin = webpTwin(href[1]);
+      if (!twin) return link;
+      return link.replace(href[1], twin).replace(/\s*\/?>$/, ' type="image/webp" />');
+    });
+
+    return content.replace(/<img\b[^>]*>/gi, (imgTag) => {
+      const srcMatch = imgTag.match(/\ssrc="([^"]+\.(?:jpe?g|png))"/i);
+      if (!srcMatch) return imgTag;
+
+      const webpSrc = webpTwin(srcMatch[1]);
+      if (!webpSrc) return imgTag;
+
+      return `<picture><source srcset="${webpSrc}" type="image/webp">${imgTag}</picture>`;
+    });
   });
 
   // HTML Minification for production builds

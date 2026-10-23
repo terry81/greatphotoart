@@ -48,32 +48,63 @@
   <span class="phone-icon">📞</span>
 </a>
 
-<script src="{{ pathPrefix }}templates/js_wright/wright/bootstrap/js/bootstrap.min.js" defer></script>
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    // Bootstrap dropdown functionality
-    if (typeof jQuery !== 'undefined') {
-      jQuery('.dropdown-toggle').dropdown();
-    }
+<script>
+  // Dependency-free replacement for bootstrap.min.js + jQuery (~120 KB saved on every page)
+  document.addEventListener('DOMContentLoaded', function () {
+    // Mobile navbar toggle (replaces data-toggle="collapse")
+    document.querySelectorAll('[data-toggle="collapse"]').forEach(function (btn) {
+      var target = document.querySelector(btn.getAttribute('data-target'));
+      if (!target) return;
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var open = target.classList.toggle('in');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    });
 
-    // Lazy load images with native lazy loading fallback
-    if ('loading' in HTMLImageElement.prototype) {
-      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-      lazyImages.forEach(img => {
-        if (img.dataset.src) {
-          img.src = img.dataset.src;
+    // Dropdown menus (replaces bootstrap dropdown plugin)
+    var toggles = Array.prototype.slice.call(document.querySelectorAll('[data-toggle="dropdown"]'));
+    function closeAll(except) {
+      toggles.forEach(function (t) {
+        if (t === except) return;
+        t.parentNode.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    }
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        // On touch/narrow screens the first tap opens the submenu instead of navigating
+        if (window.matchMedia('(hover: none), (max-width: 979px)').matches) {
+          var isOpen = toggle.parentNode.classList.contains('open');
+          if (!isOpen) {
+            e.preventDefault();
+            closeAll(toggle);
+            toggle.parentNode.classList.add('open');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
         }
       });
-    }
-
-    // Initialize Fancybox for galleries if available
-    if (typeof Fancybox !== 'undefined') {
-      Fancybox.bind("[data-fancybox]", {
-        animated: true,
-        showClass: "fancybox-fadeIn",
-        hideClass: "fancybox-fadeOut",
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { closeAll(); toggle.focus(); }
       });
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.dropdown')) closeAll();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAll();
+    });
+  });
+</script>
+
+{% if gallery %}
+<script>
+  // Fancybox is only loaded on gallery pages, so only bind there
+  window.addEventListener('load', function () {
+    if (typeof Fancybox !== 'undefined') {
+      Fancybox.bind('[data-fancybox]', { animated: true });
     }
   });
 </script>
+{% endif %}
 
