@@ -26,13 +26,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Eleventy site
-        run: npx @11ty/eleventy
+      - name: Cache generated WebP derivatives
+        uses: actions/cache@v4
+        with:
+          path: images/**/*.webp
+          key: webp-${{ hashFiles('src/**/*.njk', '_includes/**/*.njk') }}
+          restore-keys: webp-
+
+      - name: Build Eleventy site (minified HTML + WebP images)
+        run: npm run build:prod
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

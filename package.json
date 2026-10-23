@@ -4,8 +4,12 @@
   "description": "Great Photo Art Website - Static Site with 11ty",
   "scripts": {
     "start": "eleventy --serve",
+    "preview": "ELEVENTY_ENV=production eleventy --serve",
     "build": "eleventy",
-    "build:prod": "ELEVENTY_ENV=production eleventy",
+    "images": "node scripts/optimize-images.js",
+    "audit:images": "node scripts/audit-images.js",
+    "check": "node scripts/check-links.js",
+    "build:prod": "ELEVENTY_ENV=production eleventy && npm run images && ELEVENTY_ENV=production eleventy",
     "clean": "rm -rf _site"
   },
   "keywords": [
@@ -17,7 +21,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
-    "html-minifier-terser": "^7.2.0"
+    "html-minifier-terser": "^7.2.0",
+    "sharp": "^0.35.5"
   },
   "overrides": {
     "@11ty/recursive-copy": "5.0.2"

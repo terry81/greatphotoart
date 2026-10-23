@@ -62,6 +62,9 @@ package-lock.json
 # Cache
 .cache/
 
+# Generated image derivatives (rebuilt by `npm run images` during the build)
+images/**/*.webp
+
 # Node / frontend (if added later)
 node_modules/
 dist/
